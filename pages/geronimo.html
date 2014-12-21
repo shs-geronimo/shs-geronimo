@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h2>Over Geronimo</h2>
+      
+      
+    <h4>Handboogvereniging Geronimo</h4>
+
+    <p class="textw">
+        De Seijster Handboog Schutterij Geronimo is in 1981 in Zeist
+        (regio Utrecht) opgericht. Diverse schutters van Geronimo zijn
+        regelmatig te vinden op nationale en internationale wedstrijden.
+        De handboogsport mag zich in Nederland verheugen op een
+        toenemende belangstelling.
+    </p>
+
+
+    <h4>Voor wie geschikt?</h4>
+
+    <p class="textw">
+        De handboogsport is bij uitstek geschikt voor iedereen, van jong
+        tot oud, voor validen en minder validen. Handboogschieten is een
+        technische sport waarbij concentratie belangrijk is. Het is een
+        individuele sport waarbij de schutter zelf helemaal
+        verantwoordelijk is voor de prestatie. Op wedstrijden kan het
+        team-element wel meespelen, wanneer de scores van individuele
+        schutters worden opgeteld.
+    </p>
+
+
+    <h4>Soorten bogen</h4>
+
+    <p class="textw">
+        Binnen de handboogsport wordt over het algemeen met drie
+        verschillende bogen worden geschoten. Tot medio de 20ste eeuw
+        werd er geschoten zonder vizier en stabilisatie, een barebow.
+        Daarnaast is er de recurve bow, dezelfde als de barebow maar dan
+        met vizier en stabilisatie. Tevens is er de compound bow, die
+        wat korter is en voorzien is van katrollen aan het uiteinde van
+        de werparmen, alsmede een vizier met vergrotende lens en soms
+        een of twee waterpassen. Ook in deze klasse hebben wij
+        gerenommeerde schutters in huis om u goed op te leiden. Met
+        traditionele bogen als de longbow, flatbow, ruiterboog en
+        composite bow wordt recentelijk ook meer geschoten bij onze
+        club.
+    </p>
+
+    <table><tr>
+        <td>
+            <a target="_blank" href="{% static '/static/images_geronimo/composite.jpg' %}">
+                <img style="float:right;" src="{% static '/static/images_geronimo/thumbs/composite.jpg' %}" /><br>
+                Composite bow</td></a>
+        <td>
+            <a target="_blank" href="{% static '/static/images_geronimo/long.jpg' %}">
+                <img style="float:right;" src="{% static '/static/images_geronimo/thumbs/long.jpg' %}" /><br>
+                Longbow</td></a>
+        <td>
+            <a target="_blank" href="{% static '/static/images_geronimo/bare.jpg' %}">
+                <img style="float:right;" src="{% static '/static/images_geronimo/thumbs/bare.jpg' %}" /><br>
+                Barebow</td></a>
+        <td>
+            <a target="_blank" href="{% static '/static/images_geronimo/recurve.jpg' %}">
+                <img style="float:right;" src="{% static '/static/images_geronimo/thumbs/recurve.jpg' %}" /><br>
+                Recurve bow</td></a>
+        <td>
+            <a target="_blank" href="{% static '/static/images_geronimo/compound.jpg' %}">
+                <img style="float:right;" src="{% static '/static/images_geronimo/thumbs/compound.jpg' %}" /><br>
+                Compound bow</td></a>
+    </tr></table>
+
+
+    <h4>Cursussen</h4>
+
+    <p class="textw">
+        Een paar keer per jaar worden <a href="{% url
+        '/beginnerscursus.html' %}">cursussen</a> gestart voor
+        beginnende schutters. De cursus bestaat uit 10 lessen waarin u
+        de beginselen van het handboogschieten wordt aangeleerd. Tijdens
+        de cursus kunt u gebruik maken van het materiaal van de
+        vereniging. Daarnaast is het mogelijk om bij de vereniging een
+        boog te huren, of u kunt besluiten zelf een boog te kopen.
+    </p>
+
+
+    <h4>Meer over Geronimo</h4>
+
+    <p class="textw">
+        Indien u meer wilt weten over Geronimo kunt u <a
+        href="{% url '/contact.html' %}">informatie aanvragen</a> of een keer
+        langskomen, op afspraak.
+    </p>
+
+    <p class="textw">
+        De naam van deze handboogvereniging komt natuurlijk van de
+        Apache indiaan Geronimo. Voor de geïnteresseerden hebben we een
+        korte geschiedenis van Geronimo samengesteld waarin u kunt
+        nalezen wie hij eigenlijk was.
+    </p>
+{% endblock %}

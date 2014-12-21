@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+    <h2>Handboogschieten bij Geronimo</h2>
+
+    <p><img style="float:right;" src="{% static 'static/images_index/geronimo-logo.png' %}" alt="geronimo" /></p>
+
+    <p>Op onze website vindt u onder andere:</p>
+    <ul>
+        <li>Relevante adressen, telefoonnummers en andere informatie</li>
+        <li>Komende activiteiten en wedstrijden bij Geronimo</li>
+        <li>Een aanmeldformulier voor de beginnerscursus waarna u lid kunt worden</li>
+    </ul>
+
+    <table id="index" cellpadding="0" cellspacing="0"><tr>
+        <td>
+            <a href="{% url '/beginnerscursus.html' %}">
+                <img alt="Beginnerscursus" src="{% static 'static/images_index/index_01.jpg' %}" /><br>
+                Beginnerscursus
+            </a>
+        </td>
+        <td>
+            <a href="{% url '/adres.html' %}">
+                <img alt="Adres en route" src="{% static 'static/images_index/index_02.jpg' %}" /><br>
+                Adres en route
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="{% url '/fotos.html' %}">
+                <img alt="Foto's" src="{% static 'static/images_index/index_03.jpg' %}" /><br>
+                Foto's
+            </a>
+        </td>
+        <td>
+            <a href="{% url '/contact.html' %}">
+                <img alt="Bestuur en contact" src="{% static 'static/images_index/index_04.jpg' %}" /><br>
+                Bestuur en contact
+            </a>
+        </td>
+    </tr></table>
+
+{% endblock %}

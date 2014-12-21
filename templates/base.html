@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}SHS Geronimo{% endblock %}</title>
+
+        <link rel="shortcut icon" href="{% static '/static/images_favicon/favicon.ico' %}">
+        <link rel="apple-touch-icon" sizes="57x57" href="{% static '/static/images_favicon/apple-touch-icon-57x57.png' %}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{% static '/static/images_favicon/apple-touch-icon-60x60.png' %}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static '/static/images_favicon/apple-touch-icon-72x72.png' %}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{% static '/static/images_favicon/apple-touch-icon-76x76.png' %}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static '/static/images_favicon/apple-touch-icon-114x114.png' %}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{% static '/static/images_favicon/apple-touch-icon-144x144.png' %}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{% static '/static/images_favicon/apple-touch-icon-120x120.png' %}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{% static '/static/images_favicon/apple-touch-icon-152x152.png' %}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static '/static/images_favicon/apple-touch-icon-180x180.png' %}">
+        <meta name="apple-mobile-web-app-title" content="SHS Geronimo">
+        <link rel="icon" type="image/png" href="{% static '/static/images_favicon/favicon-192x192.png' %}" sizes="192x192">
+        <link rel="icon" type="image/png" href="{% static '/static/images_favicon/favicon-160x160.png' %}" sizes="160x160">
+        <link rel="icon" type="image/png" href="{% static '/static/images_favicon/favicon-96x96.png' %}" sizes="96x96">
+        <link rel="icon" type="image/png" href="{% static '/static/images_favicon/favicon-16x16.png' %}" sizes="16x16">
+        <link rel="icon" type="image/png" href="{% static '/static/images_favicon/favicon-32x32.png' %}" sizes="32x32">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-TileImage" content="{% static '/static/images_favicon/mstile-144x144.png' %}">
+        <meta name="msapplication-config" content="{% static '/static/images_favicon/browserconfig.xml' %}">
+        <meta name="application-name" content="SHS Geronimo">
+        <meta name="description" content="{% block meta_description %}{% endblock %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="{% static '/static/css/main.css' %}">
+        <style>
+            {% block style %}
+            {% endblock %}
+        </style>
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        <div id="container">
+            <div id="bannerContainer">
+                <div id="navcontainer">
+                    <ul>
+                        <li><a class="{% if_current_page '/geronimo.html' 'active' '' %}"
+                               href="{% url '/geronimo.html' %}">Over Geronimo</a></li>
+                        <li><a class="{% if_current_page '/nieuws.html' 'active' '' %}"
+                               href="{% url '/nieuws.html' %}">Nieuws</a></li>
+                        <li><a class="{% if_current_page '/beginnerscursus.html' 'active' '' %}"
+                               href="{% url '/beginnerscursus.html' %}">Beginnerscursus</a></li>
+                        <li><a class="{% if_current_page '/lidmaatschap.html' 'active' '' %}"
+                               href="{% url '/lidmaatschap.html' %}">Lidmaatschap</a></li>
+                        <li><a class="{% if_current_page '/workshop.html' 'active' '' %}"
+                               href="{% url '/workshop.html' %}">Workshop</a></li>
+                        <li><a class="{% if_current_page '/openingstijden.html' 'active' '' %}"
+                               href="{% url '/openingstijden.html' %}">Openingstijden</a></li>
+                        <li><a class="{% if_current_page '/activiteiten.html' 'active' '' %}"
+                               href="{% url '/activiteiten.html' %}">Activiteiten</a></li>
+                        <li><a class="{% if_current_page '/fotos.html' 'active' '' %}"
+                               href="{% url '/fotos.html' %}">Foto's</a></li>
+                        <li><a class="{% if_current_page '/filmpjes.html' 'active' '' %}"
+                               href="{% url '/filmpjes.html' %}">Filmpjes</a></li>
+                        <li><a class="{% if_current_page '/adres.html' 'active' '' %}"
+                               href="{% url '/adres.html' %}">Adres en route</a></li>
+                        <li><a class="{% if_current_page '/contact.html' 'active' '' %}"
+                               href="{% url '/contact.html' %}">Bestuur en contact</a></li>
+                        <li><a class="{% if_current_page '/links.html' 'active' '' %}"
+                               href="{% url '/links.html' %}">Links</a></li>
+                    </ul>
+                </div>
+                <a href="index.html">
+                    <div id="pageHeader">
+                        <h1>Geronimo</h1>
+                        <h2>Seijster Handboog Schutterij</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="clearer"></div>
+            <div id="contentContainer">
+                <div id="content">
+                    {% block body %}
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="clearer"></div>
+        </div>
+        <div id="footer">
+            <p>© 2007-2015 <a href="#" id="email_contact">Arne de Laat</a></p>
+        </div>
+        <script type="text/javascript">
+            {% block script %}
+            {% endblock %}
+            var bla0 = "mai",
+                bla1 = "lto",
+                bla2 = ":ar",
+                bla3 = "ne",
+                bla4 = "@d",
+                bla5 = "ela",
+                bla6 = "at.",
+                bla7 = "net",
+                bla = bla0 + bla1 + bla2 + bla3 + bla4 + bla5 + bla6 + bla7;
+            document.getElementById('email_contact').href = bla;
+
+            var sc_project = 2440066,
+                sc_invisible = 1,
+                sc_partition = 23,
+                sc_security = "4fca23f4";
+        </script>
+        <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+    </body>
+</html>
+
