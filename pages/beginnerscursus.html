@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : Beginnerscursus{% endblock %}
+
+{% block banner %}DSC_22393.png{% endblock %}
+{% block logo-position %}top: -200px; left: 670px;{% endblock %}
+
+{% block body %}
+    <h2>Beginnerscursus</h2>
+
+    <p class="textw">
+        Geronimo verwelkomt graag aspirant leden. U kunt langskomen om
+        eens te kijken wat boogschieten bij Geronimo precies inhoudt,
+        het liefst op afspraak. Bent u geïnteresseerd om het ook eens te
+        proberen, dan kunt u eenmalig een beginnerscursus van 10 lessen
+        volgen. Voor de cursus hoeft u zelf geen materiaal te hebben,
+        huur van boog, pijlen en andere attributen zijn in de prijs van
+        de cursus inbegrepen. Na de cursus dient u <a href="{% url
+        '/lidmaatschap.html' %}">lid</a> te worden om verder te kunnen
+        blijven schieten bij de club en mee te doen aan activiteiten.
+    </p>
+
+    <table width="250" border="0">
+        <tr>
+            <th colspan="2" align="center">Prijzen eenmalige
+            beginnerscursus</th>
+        </tr>
+        <tr>
+            <td>Jeugd, 12 t/m 17 jaar</td>
+            <td>&euro; 80,00</td>
+        </tr>
+        <tr>
+            <td>Studenten</td>
+            <td>&euro; 80,00</td>
+        </tr>
+        <tr>
+            <td>Volwassenen, v.a. 18 jaar</td>
+            <td>&euro; 100,00</td>
+        </tr>
+    </table>
+
+
+    <h3>Wanneer?</h3>
+
+    <p class="textw">
+        Er zijn twee beginnerscursussen per jaar;
+    </p>
+    <ul>
+        <li>Een begint op de laatste vrijdag van september</li>
+        <li>De ander op de 3e vrijdag van januari</li>
+    </ul>
+
+    <p class="textw">
+        Voor elke cursus is er ruimte voor 8 schutters, de selectie
+        gebeurt op volgorde van aanmelding. Er is geen mogelijkheid voor
+        privé lessen.
+    </p>
+
+
+    <h3>Les schema</h3>
+
+    <p class="textw">
+        De 10 lessen worden gegeven op de vrijdag (elke week, voor 10
+        weken) van 19.30 tot 20.30 uur. De lessen beginnen om 19:30,
+        graag willen we dan beginnen met de les, kom dus iets eerder om
+        je boog alvast te pakken.
+    </p>
+
+
+    <h3>Aanmelden?</h3>
+
+    <p class="textw">
+        U kunt zich aanmelden via <a href="{% url '/aanmelden.html' %}">
+        <b>dit formulier</b></a> op de website. Daar moet u onder andere
+        uw naam, adres, telefoonnummer en email invullen, en kiezen aan
+        welke beginnerscursus u mee wilt doen. Om de inschrijving
+        definitief te maken moet u de helft van het cursus geld
+        overmaken naar de Geronimorekening. Tijdens de cursus krijgt u
+        alle materiaal van de club, wel is het handig strakke kleding
+        aan te doen en makkelijke loop schoenen. Neem contact op met de
+        secretaris <a id="email_6" href="#">Wim Ponsen</a> voor meer
+        informatie.
+    </p>
+
+{% endblock %}
+
+{% block script %}
+    var _mailt = "mailto:",
+        _extger = "shs-geronimo.org",
+        _at = "@",
+        _secr = "secretaris",
+        _secr2 = _mailt + _secr + _at + _extger;
+    document.getElementById('email_6').href = _secr2;
+{% endblock %}

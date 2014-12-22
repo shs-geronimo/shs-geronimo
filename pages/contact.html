@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : Bestuur en contact{% endblock %}
+
+{% block banner %}ADL_115745.png{% endblock %}
+{% block logo-position %}top: -160px; left: 240px;{% endblock %}
+
+{% block body %}
+    <h2>Bestuursleden</h2>
+
+    <p style="font-style: italic;">Per 7 mei, 2014</p>
+
+    <ul>
+        <li>
+            <a id="email_voor" href="#">Arnold Dittmar</a> &ndash; voorzitter
+            <ul>
+                <li>Coördinator en aanspreekpunt voor instructeurs</li>
+                <li>Coördinatie demonstraties</li>
+                <li>Public relations</li>
+            </ul>
+        </li>
+        <li>
+            <a id="email_rayon" href="#">Jeffrey Maagdenberg</a> &ndash; vicevoorzitter en rayonzaken
+        </li>
+        <li>
+            <a id="email_sec" href="#">Wim Ponsen</a> &ndash; secretaris
+            <ul>
+                <li>Aanspreekpunt nieuwe cursisten</li>
+                <li>Ledenlijst</li>
+                <li>Notulen bestuurs- en ledenvergaderingen</li>
+                <li>Nieuwsbrief</li>
+                <li>Verzorgen jaarverslagen</li>
+            </ul>
+        </li>
+        <li>
+            <a id="email_penning" href="#">Kasper Dieho</a> &ndash; penningmeester
+            <ul>
+                <li>Begroting</li>
+                <li>Financieel jaarverslag</li>
+            </ul>
+        </li>
+        <li>
+            <a id="email_beheer" href="#">Gijs van Doorn</a> &ndash; organisatie en beheer
+            <ul>
+                <li>Organisatie</li>
+                <li>Catering</li>
+                <li>Workshops</li>
+                <li>Verschietingen</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Wilt u meer informatie?</h2>
+    <p>
+        Als u meer informatie wenst, zich in wilt schrijven als lid of
+        op wilt geven voor een cursus, kunt u contact opnemen met<br>
+        <a id="email_sec2" href="#">de secretaris</a>.
+    </p>
+
+    <p>
+        Inschrijven voor de beginnerscursus kan ook via
+        <a href="{% url '/aanmelden.html' %}">dit formulier</a>.
+    </p>
+
+    <h2>Website</h2>
+
+    <p>
+        Indien u op- of aanmerkingen heeft over deze website, mail dan
+        naar: <a href="#" id="email_web">Arne de Laat</a>.
+    </p>
+{% endblock %}
+
+{% block script %}
+    var _mailt = "mailto:"
+    var _extger = "shs-geronimo.org";
+    var _at = "@";
+    var _ditmar = "voorzitter"
+    var _ditmar2 = _mailt+_ditmar+_at+_extger;
+    var _sec = "secretaris"
+    var _sec2 = _mailt+_sec+_at+_extger;
+    var _wilde = "penningmeester"
+    var _wilde2 = _mailt+_wilde+_at+_extger;
+    var _maagdenberg = "rayonzaken"
+    var _maagdenberg2 = _mailt+_maagdenberg+_at+_extger;
+    var _dieho = "k.dieho"
+    var _dieho2 = _mailt+_dieho+_at+_extger;
+    var _doorn = "qeqe53wd"
+    var _doorn1 = "kpnmail.nl"
+    var _doorn2 = _mailt+_doorn+_at+_doorn1;
+    var _delaat = "webmaster"
+    var _delaat2 = _mailt+_delaat+_at+_extger;
+    document.getElementById('email_voor').href = _ditmar2;
+    document.getElementById('email_rayon').href = _maagdenberg2;
+    document.getElementById('email_sec').href = _sec2;
+    document.getElementById('email_sec2').href = _sec2;
+    document.getElementById('email_penning').href = _dieho2;
+    document.getElementById('email_web').href = _delaat2;
+    document.getElementById('email_beheer').href = _doorn2;
+{% endblock %}

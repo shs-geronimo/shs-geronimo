@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : Adres{% endblock %}
+
+{% block banner %}ADL_135275.png{% endblock %}
+{% block logo-position %}top: -200px; left: 650px;{% endblock %}
+
+{% block body %}
+    <h2>Adres en route</h2>
+
+    <p>
+        Het adres voor zowel post als het verenigingsgebouw zelf is:<br>
+        S.H.S. Geronimo<br>
+        Kroostweg 58<br>
+        3704 EE Zeist
+    </p>
+
+    <h3>Routebeschrijving club</h3>
+
+    <ul>
+        <li>Vanaf de snelweg komt u na het nemen van de afslag Zeist op de Utrechtseweg uit.</li>
+        <li>Na het binnenkomen van de bebouwde kom dient u bij het tweede kruispunt naar rechtsaf te slaan, de Oirschotlaan in.</li>
+        <li>Volg de Oirschotlaan, deze gaat over in de Harmonielaan.</li>
+        <li>De Harmonielaan komt uit op een T-splitsing. Sla hier linksaf de Kroostweg in tot u bij nummer 58 aankomt (aan u linker kant).</li>
+        <li>Er is parkeergelegenheid op het terrein van SHS Geronimo zelf en langs de straat.</li>
+    </ul>
+
+    <p>
+        De route die u vanaf de Utrechtseweg kunt volgen is op de
+        volgende kaart met paars aangegeven:
+    </p>
+
+    <img src="{% static '/static/images_adres/routebeschrijving1.png' %}" />
+    <img src="{% static '/static/images_adres/routebeschrijving2.png' %}" />
+
+    <h3>Routebeschrijving buitenveld</h3>
+
+    <p style="width:560px; font-weight: bold;">
+        Er mag alleen buiten geschoten worden als u binnen op goed
+        genoeg kan schieten (bijvoorbeeld gemiddeld een 7 op een 40cm
+        blazoen op 18m) in verband met veiligheid en zodat niet alle
+        tijd kwijt is aan het zoeken naar pijlen in het gras.
+    </p>
+
+    <ul>
+        <li>Rij (met auto) vanaf het verenigingsgebouw linksaf richting de Griftlaan, ga links.</li>
+        <li>Sla rechtsaf de Utrechtseweg op, volg deze.</li>
+        <li>Sla na de bocht links af de Lageweg op, dan de derde rechts.</li>
+        <li>Rij dan de parkeerplaats op.</li>
+        <li>Van de parkeerplaats moet u over de brug heen en dan het filosofenlaantje in.</li>
+        <li>Dan de door de eerste poort aan de linker kant, bij de skatebaan.</li>
+        <li>Loop dan door de tweede poort, links, het veld op.</li>
+    </ul>
+
+    <p>
+        De route die u vanaf het verenigingsgebouw moet volgen is op de
+        volgende kaart met groen aangegeven, parkeer u auto bij de
+        parkeerplaats (aangegeven met blauw), de route van de
+        parkeerplaats tot het veld aangegeven met rood:
+    </p>
+
+    <img src="{% static '/static/images_adres/buitenveld1.png' %}" />
+    <img src="{% static '/static/images_adres/buitenveld2.png' %}" />
+{% endblock %}

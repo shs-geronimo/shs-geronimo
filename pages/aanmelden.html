@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : Aanmelden beginnerscursus{% endblock %}
+
+{% block banner %}DSC_22439.png{% endblock %}
+{% block logo-position %}top: -190px; left: 430px;{% endblock %}
+
+{% block body %}
+    <h2>Aanmeld formulier beginnerscursus</h2>
+
+    <p>
+        Met dit formulier kunt u zich aanmelden voor de
+        beginnerscursus.
+    </p>
+
+    <p>
+        <b>Let op!</b> De aanmelding is pas definitief als de helft van het
+        lesgeld overmaakt is.<br>
+        Maak na de aanmelding dus € 50 (of €40 voor jeugd/studenten) over,
+        onder vermelding van uw naam,<br>
+        naar: <i>NL35 INGB 0005 2303 09, t.n.v. SHS Geronimo te Zeist</i>.
+    </p>
+
+    <p>
+        Na succesvolle aanmelding zal u een mail ontvangen van ons ter
+        bevestiging en meer informatie.
+    </p>
+
+    <h3>Aanmeld formulier</h3>
+
+    <form style="font-weight:bold;" enctype="multipart/form-data" method="post"
+          action="http://www.response-o-matic.com/mail.php" accept-charset="UTF-8">
+        <input type="hidden" name="acctid" id="acctid" value="ln8heofy2a2r60iy">
+        <input type="hidden" name="formid" id="formid" value="862973">
+        <input type="hidden" name="required_vars" id="required_vars"
+               value="naam,adres,postcode,woonplaats,geboorte,telefoon,email,datum">
+        <p>
+            Naam:<br>
+            <input type="text" name="naam" id="naam" size="50" value="">
+        </p>
+        <p>
+            Adres:<br>
+            <input type="text" name="adres" id="adres" size="50" value="">
+        </p>
+        <table border="0">
+            <tr><td>Postcode:</td><td>Woonplaats:</td></tr>
+            <tr><td><input type="text" name="postcode" id="postcode" size="10" value=""></td>
+                <td><input type="text" name="woonplaats" id="woonplaats" size="33" value=""></td></tr>
+        </table>
+        <p>
+            Geboortedatum:<br>
+            <input type="text" name="geboorte" id="geboorte" size="22" value="">
+        </p>
+        <p>
+            Telefoonnummer:<br>
+            <input type="text" name="telefoon" id="telefoon" size="22" value="">
+        </p>
+        <p>
+            Email:<br>
+            <input type="text" name="email" id="email" size="22" value="">
+        </p>
+
+        <p style="font-weight:normal;"><b>Beginnerscursus:</b><br>
+            <input type="radio" name="datum" id="datum_2" value="Januari 2015" disabled> Januari 2015 (vol)<br>
+            <input type="radio" name="datum" id="datum_3" value="Oktober 2015"> Oktober 2015<br>
+            <input type="radio" name="datum" id="datum_4" value="Januari 2016"> Januari 2016
+        </p>
+        <input type="submit" value=" Verstuur aanmelding "><br>
+    </form>
+{% endblock %}

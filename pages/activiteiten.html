@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : Activiteiten en wedstrijden{% endblock %}
+
+{% block banner %}ADL_135176.png{% endblock %}
+{% block logo-position %}top: -160px; left: 490px;{% endblock %}
+
+{% block body %}
+    <div style="float: right;">
+        <img style="border-radius: 6px;" src="{% static '/static/images_activiteiten/ADL_055641.jpg' %}" /><br><br>
+        <img style="border-radius: 6px;" src="{% static '/static/images_activiteiten/DSC_05935.jpg' %}" /><br><br>
+        <img style="border-radius: 6px;" src="{% static '/static/images_activiteiten/DSC_100486.jpg' %}" />
+    </div>
+
+    <h2>Activiteiten</h2>
+    <div style="display:inline-block;">
+        <p>-</p>
+    </div>
+
+    <h2>Wedstrijden</h2>
+    <div style="display:inline-block;">
+        <p>-</p>
+    </div>
+
+    <h2>Uitslagen en verslagen</h2>
+    <ul>
+        <li><a href="uitslagen/veldschieten.html">Workshop Veldschieten</a></li>
+        <li><a href="uitslagen/paasverschieting.html">Paasverschieting</a></li>
+        <li><a href="uitslagen/sinterkerstnieuwjaarsverschieting.html">SinterKerstNieuwjaarsverschieting</a></li>
+        <li><a href="uitslagen/koningschieten.html">Koningschieten</a></li>
+    </ul>
+
+    <h2>Externe wedstrijden (buiten onze club):</h2>
+    <p>
+        Voor een volledig overzicht, zie:
+        <a href="http://www.handboogsport.nl/kalender/" target="_blank">Algemene Wedstrijdkalender</a>
+    </p>
+    <ul>
+        <li><a href="activiteiten_assets/2014_25m1p.pdf" target="_blank">2014-2015 - 25 meter 1 pijl en NHB-beker</a></li>
+        <li><a href="http://www.eilandschutters.nl/files/WA%202015%20flyer.pdf" target="_blank">14-15 februari 2015 - Winteranimal, Eilandschutters op Texel</a></li>
+    </ul>
+{% endblock %}

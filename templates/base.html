@@ -29,6 +29,11 @@
 
         <link rel="stylesheet" href="{% static '/static/css/main.css' %}">
         <style>
+            #bannerContainer {
+                background: url('/static/images_site/{% block banner %}ADL_060178.png{% endblock %}') no-repeat;}
+            #pageHeader {
+                {% block logo-position %}top: -180px; left: 280px;{% endblock %}}
+
             {% block style %}
             {% endblock %}
         </style>
@@ -105,6 +110,8 @@
                 sc_security = "4fca23f4";
         </script>
         <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+        {% block scripts %}
+        {% endblock %}
     </body>
 </html>
 

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : Filmpjes{% endblock %}
+
+{% block banner %}ADL_135292.png{% endblock %}
+{% block logo-position %}top: -180px; left: 720px;{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="http://arne.delaat.net/static/css/vendor/normalize.css">
+    <link rel="stylesheet" href="http://arne.delaat.net/style/tipTip.css">
+    <link rel="stylesheet" href="http://arne.delaat.net/static/css/video.css">
+    <link rel="stylesheet" href="http://arne.delaat.net/static/css/controls.css">
+    <link rel="stylesheet" href="http://arne.delaat.net/static/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="http://arne.delaat.net/static/css/thumbs/D80.css">
+    <link rel="stylesheet" href="http://arne.delaat.net/static/css/thumbs/D90.css">
+    <link rel="stylesheet" href="http://arne.delaat.net/static/css/thumbs/D700.css">
+    <link rel="stylesheet" href="http://arne.delaat.net/static/css/thumbs/S60.css">
+{% endblock %}
+
+{% block style %}
+    .thu {margin: 1px;}
+    #progress_indicator {top: -2px; left: -2px;}
+    #volume_indicator {top: 5px;}
+{% endblock %}
+
+
+{% block body %}
+    <h2>Filmpjes</h2>
+
+    <p>
+        Dit zijn een aantal gewone en time-lapse filmpjes gemaakt
+        tijdens het schieten.
+    </p>
+
+    <ul id="thumbnails" style="background-color:#fff; padding-left: 0px;">
+             <li class="thu" id="SHS_Geronimo_Zeist_131012" style="background:url('http://arne.delaat.net/Movies/thumbs/SHS_Geronimo_Zeist_131012.png');">
+        </li><li class="thu" id="iPad_111029_2" style="background:url('http://arne.delaat.net/Movies/thumbs/iPad_111029_2.jpg');">
+        </li><li class="thu" id="iPad_111029_1" style="background:url('http://arne.delaat.net/Movies/thumbs/iPad_111029_1.jpg');">
+        </li><li class="thu d80" id="D80_100816_3">
+        </li><li class="thu d80" id="D80_090906_2">
+        </li><li class="thu d80" id="D80_090906_1">
+        </li><li class="thu s60" id="S60_051218_1">
+    </ul>
+
+    <div class="quicktime" id="movie" style="background-color:#ffffff; height:665px;">
+        <img id="poster" style="margin:0px 235px;" data-id="D80_090906_2" class="showing"
+             src="{% static '/static/images_filmpjes/clicktoplay.jpg' %}" />
+        <video id="player" height="0" width="0">
+            <p>
+                Your browser does not support HTML 5, upgrade to a newer version that does:
+                    <a class="sup" id="sf" href="http://www.apple.com/safari/" title="Safari 4+">
+                </a><a class="sup" id="ch" href="http://www.google.com/chrome" title="Google Chrome 5+">
+                </a><a class="sup" id="ff" href="http://www.firefox.com/" title="Firefox 3.5+">
+                </a><a class="sup" id="op" href="http://www.opera.com/" title="Opera 10.60+">
+                </a><a class="sup" id="ie" href="http://ie.microsoft.com/testdrive/" title="Internet Explorer 9"></a>
+            </p>
+        </video>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="http://arne.delaat.net/script/jquery.min.js"></script>
+    <script src="http://arne.delaat.net/script/jquery.tipTip.min.js"></script>
+    <script src="http://arne.delaat.net/static/js/video.js"></script>
+{% endblock %}
