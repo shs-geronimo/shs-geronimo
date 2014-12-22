@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : SinterKerstNieuwjaarsverschieting{% endblock %}
+
+{% block banner %}ADL_135176.png{% endblock %}
+{% block logo-position %}top: -160px; left: 490px;{% endblock %}
+
+{% block body %}
+    <h2>SinterKerstNieuwjaarsverschieting</h2>
+
+    <p class="textw">
+        Op 9 januari was de grote SinterKerstNieuwjaarsverschieting bij
+        Geronimo. Om half vier stond een grote groep schutters (bijna 20
+        man) vol spanning aan de schietlijn te wachten op het startschot
+        van de wedstrijd. Makkelijk was het niet: er moest met een
+        barebow instructieboog geschoten worden. En je mocht pas punten
+        gaan tellen als je eerst een kerstbal had geraakt. Om het extra
+        moeilijk te maken hingen er ook nog Toy Story poppetjes in het
+        geel, als je die raakte was je al je punten weer kwijt...
+    </p>
+
+    <p class="textw">
+        Na een spannende strijd werden aan het eind van de middag de 3
+        beste schutters bekend gemaakt. Op de derde plaats eindigde
+        Jelle, die er met een prachtige Italiaanse designklok vandoor
+        ging. Op de tweede plaats eindigde Shaun, en dat leverde hem een
+        echte pda op. En op de eerste plaats stond Arnold, die vol trots
+        een jaar lang de prachtige wisselbeker in zijn huiskamer mag
+        zetten!
+    </p>
+
+    <p>
+        De foto's staan op de <a href="{% url '/fotos.html' %}">foto
+        pagina</a> onder 2011.
+    </p>
+{% endblock %}
