@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : Koningschieten : 2009{% endblock %}
+
+{% block banner %}ADL_135176.png{% endblock %}
+{% block logo-position %}top: -160px; left: 490px;{% endblock %}
+
+{% block body %}
+    <h2>Koningschieten 2009</h2>
+    <p>
+        <a href="{% url '/uitslagen/koningschieten.html' %}">Koningschieten</a>:
+        <a href="{% url '/uitslagen/koningschieten/2014.html' %}">2014</a>,
+        <a href="{% url '/uitslagen/koningschieten/2007.html' %}">2007</a>,
+        <a href="{% url '/uitslagen/koningschieten/2006.html' %}">2006</a>,
+        <a href="{% url '/uitslagen/koningschieten/2005.html' %}">2005</a>.
+    </p>
+    <p>
+        De wedstrijd vond plaats op zaterdag 12 September.<br>
+        Er deden deze keer twee deelnemers mee met een barebow, zij
+        schoten op 40 en 20 meter.<br>
+        De rest, recurve en compound, schoot op de gebruikelijke 50en 30
+        meter.
+    </p>
+
+    <h3>Uitslag</h3>
+    <table><tr><td width="240" valign="top">
+        <h5>Recurve</h5>
+        <p>Heren:</p>
+        <table width="220" border="0">
+            <tr><th width="40">Plaats</th><th>Naam</th><th width="40">Score</th></tr>
+            <tr><td>1</td><td>Kasper Dieho</td><td></td></tr>
+            <tr><td>2</td><td></td><td></td></tr>
+            <tr><td>3</td><td></td><td></td></tr>
+            <tr><td>4</td><td>Arne de Laat</td><td></td></tr>
+            <tr><td>5</td><td></td><td></td></tr>
+            <tr><td>6</td><td></td><td></td></tr>
+        </table>
+        <p>Jongens:</p>
+        <table width="220" border="0">
+            <tr><th width="40">Plaats</th><th>Naam</th><th width="40">Score</th></tr>
+            <tr><td>1</td><td></td><td></td></tr>
+        </table>
+        <p>Dames:</p>
+        <table width="220" border="0">
+            <tr><th width="40">Plaats</th><th>Naam</th><th width="40">Score</th></tr>
+            <tr><td>1</td><td></td><td></td></tr>
+            <tr><td>2</td><td></td><td></td></tr>
+        </table>
+    </td>
+    <td width="240" valign="top">
+        <h5>Compound</h5>
+        <p>Heren:</p>
+        <table width="220" border="0">
+            <tr><th width="40">Plaats</th><th>Naam</th><th width="40">Score</th></tr>
+            <tr><td>-</td><td>Sander de Vries</td><td></td></tr>
+            <tr><td>-</td><td>Peter de Wilde</td><td></td></tr>
+            <tr><td>1</td><td>Peter de Jong</td><td></td></tr>
+        </table>
+        <p>Dames:</p>
+        <table width="220" border="0">
+            <tr><th width="40">Plaats</th><th>Naam</th><th width="40">Score</th></tr>
+            <tr><td>-</td><td>Françoise Weijters</td><td></td></tr>
+        </table>
+    </td>
+    <td width="240" valign="top">
+        <h5>Barebow</h5>
+        <p>Heren:</p>
+        <table width="220" border="0">
+            <tr><th width="40">Plaats</th><th>Naam</th><th width="40">Score</th></tr>
+            <tr><td>1</td><td>Arnold Dittmar</td><td></td></tr>
+        </table>
+        <p>Jongens:</p>
+        <table width="220" border="0">
+            <tr><th width="40">Plaats</th><th>Naam</th><th width="40">Score</th></tr>
+            <tr><td>1</td><td>Jelle Dittmar</td><td></td></tr>
+        </table>
+    </td></tr></table>
+{% endblock %}

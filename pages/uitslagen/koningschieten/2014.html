@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : Koningschieten : 2014{% endblock %}
+
+{% block banner %}ADL_135176.png{% endblock %}
+{% block logo-position %}top: -160px; left: 490px;{% endblock %}
+
+{% block body %}
+    <h2>Koningschieten 2014</h2>
+    <p>
+        <a href="{% url '/uitslagen/koningschieten.html' %}">Koningschieten</a>:
+        <a href="{% url '/uitslagen/koningschieten/2009.html' %}">2009</a>,
+        <a href="{% url '/uitslagen/koningschieten/2007.html' %}">2007</a>,
+        <a href="{% url '/uitslagen/koningschieten/2006.html' %}">2006</a>,
+        <a href="{% url '/uitslagen/koningschieten/2005.html' %}">2005</a>.
+    </p>
+    <p>
+        De wedstrijd vond plaats op zaterdag 28 Juni. De foto's van de
+        wedstrijd zijn op de foto pagina te vinden.
+    </p>
+
+    <h3>Uitslag</h3>
+
+    <table><tr>
+        <td width="240" valign="top">
+            <h5>Recurve</h5>
+            <p>Heren:</p>
+            <table width="220" border="0">
+                <tr><th width="40">Plaats</th><th>Naam</th></tr>
+                <tr><td>1</td><td>Jeffrey Maagedenberg</td></tr>
+                <tr><td>2</td><td>Jack van Hooij</td></tr>
+                <tr><td>3</td><td>Jan van Doorn</td></tr>
+                <tr><td>4</td><td>Wout van der  Brug</td></tr>
+                <tr><td>5</td><td>Arne de Laat</td></tr>
+                <tr><td>6</td><td>Joost van der Flier</td></tr>
+                <tr><td>7</td><td>Willem Mol</td></tr>
+            </table>
+            <p>Jongens:</p>
+            <table width="220" border="0">
+                <tr><th width="40">Plaats</th><th>Naam</th></tr>
+                <tr><td>1</td><td>Koen van Lierop</td></tr>
+                <tr><td>2</td><td>Rinze Santing</td></tr>
+                <tr><td>3</td><td>Erik Meijer</td></tr>
+                <tr><td>4</td><td>Tim Bijlhout</td></tr>
+            </table>
+            <p>Dames:</p>
+            <table width="220" border="0">
+                <tr><th width="40">Plaats</th><th>Naam</th></tr>
+                <tr><td>1</td><td>Petra Bijlhout</td></tr>
+                <tr><td>2</td><td>Marga van Doorn</td></tr>
+            </table>
+            <p>Meiden:</p>
+            <table width="220" border="0">
+                <tr><th width="40">Plaats</th><th>Naam</th></tr>
+                <tr><td>1</td><td>Bibi Brettschneider</td></tr>
+            </table>
+        </td>
+        <td width="240" valign="top">
+            <h5>Compound</h5>
+            <p>Heren:</p>
+            <table width="220" border="0">
+                <tr><th width="40">Plaats</th><th>Naam</th></tr>
+                <tr><td>1</td><td>Kasper Dieho</td></tr>
+            </table>
+        </td>
+        <td width="240" valign="top">
+            <h5>Barebow</h5>
+            <p>Heren:</p>
+            <table width="220" border="0">
+                <tr><th width="40">Plaats</th><th>Naam</th></tr>
+                <tr><td>1</td><td>Arnold Dittmar</td></tr>
+                <tr><td>2</td><td>Shaun Maitland</td></tr>
+                <tr><td>3</td><td>Gijs van Doorn</td></tr>
+                <tr><td>4</td><td>Gerwin Postma</td></tr>
+            </tr></table>
+            <p>Jongens:</p>
+            <table width="220" border="0">
+                <tr><th width="40">Plaats</th><th>Naam</th></tr>
+                <tr><td>1</td><td>Julan Wardenier</td></tr>
+            </tr></table>
+            <p>Dames:</p>
+            <table width="220" border="0">
+                <tr><th width="40">Plaats</th><th>Naam</th></tr>
+                <tr><td>1</td><td>Conny Buzink</td></tr>
+            </tr></table>
+            <p>Meiden:</p>
+            <table width="220" border="0">
+                <tr><th width="40">Plaats</th><th>Naam</th></tr>
+                <tr><td>1</td><td>Arwende Wardenier</td></tr>
+            </tr></table>
+            <p>Alternatief:</p>
+            <table width="220" border="0">
+                <tr><th width="40">Plaats</th><th>Naam</th></tr>
+                <tr><td>1</td><td>Winfrid van den Kroef</td></tr>
+            </tr></table>
+        </td>
+    </tr></table>
+{% endblock %}
