@@ -3,7 +3,10 @@
 {% block body %}
     <h2>Handboogschieten bij Geronimo</h2>
 
-    <p><img style="float:right;" src="{% static 'static/images_index/geronimo-logo.png' %}" alt="geronimo" /></p>
+    <div style="float: right;">
+        <img alt="SHS Geronimo logo"
+             src="{% static 'static/images_index/geronimo-logo.png' %}" />
+    </div>
 
     <p>Op onze website vindt u onder andere:</p>
     <ul>
@@ -12,7 +15,7 @@
         <li>Een aanmeldformulier voor de beginnerscursus waarna u lid kunt worden</li>
     </ul>
 
-    <table id="index" cellpadding="0" cellspacing="0"><tr>
+    <table id="index"><tr>
         <td>
             <a href="{% url '/beginnerscursus.html' %}">
                 <img alt="Beginnerscursus" src="{% static 'static/images_index/index_01.jpg' %}" /><br>
