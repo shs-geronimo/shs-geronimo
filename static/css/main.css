@@ -110,16 +110,6 @@ table td {
     padding-left: 23px;
     padding-top: 5px;}
 
-#sidebarContainer {
-    width: 124px;
-    height: 0;
-    float: left;
-    text-align: left;}
-
-#sidebarContainer .sidebar {
-    line-height: 1.0em;
-    padding: 10px;}
-
 #footer {
     width: 960px;
     margin: 0 auto 7px;
@@ -181,14 +171,6 @@ table td {
     color: #11477f;
     font-size: 11px;
     height: 14px; /*new*/}
-
-.standout {
-    background: #1e77d3;
-    font-size: 12px;
-    color: #fff;
-    padding: 10px;
-    font-style: italic;
-    font-weight: bold;}
 
 .textw {
     width: 640px;}
