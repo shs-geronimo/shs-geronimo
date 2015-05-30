@@ -38,6 +38,14 @@
             {% endblock %}
         </style>
         {% block head %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.3&appId=472577352916916";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>      
         {% endblock %}
     </head>
     <body>
@@ -70,6 +78,7 @@
                         <li><a class="{% if_current_page '/links.html' 'active' '' %}"
                                href="{% url '/links.html' %}">Links</a></li>
                     </ul>
+                    
                 </div>
                 <a href="index.html">
                     <div id="pageHeader">
@@ -89,6 +98,11 @@
         </div>
         <div id="footer">
             <p>© 2007-2015 <a href="#" id="email_contact">Arne de Laat</a></p>
+                    <div class="fb-like" data-href="https://www.facebook.com/pages/SHS-Geronimo/279675712156072" layout="button_count" data-width="80" data-height="40" data-hide-cover="true" data-show-facepile="false" data-show-posts="false">
+           <div class="fb-xfbml-parse-ignore">
+             <blockquote cite="https://www.facebook.com/pages/SHS-Geronimo/279675712156072"><a href="https://www.facebook.com/pages/SHS-Geronimo/279675712156072">SHS Geronimo</a></blockquote>
+           </div>
+        </div>  
         </div>
         <script type="text/javascript">
             {% block script %}
@@ -110,6 +124,7 @@
                 sc_security = "4fca23f4";
         </script>
         <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+        
         {% block scripts %}
         {% endblock %}
     </body>

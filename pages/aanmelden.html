@@ -23,7 +23,8 @@
 
     <p>
         Na succesvolle aanmelding zal u een mail ontvangen van ons ter
-        bevestiging en meer informatie.
+        bevestiging en meer informatie. Mocht u na <b>6</b> weken nog niets van ons gehoord hebben, 
+        neem dan contact op met de <a id="email_6" href="#"><b>secretaris</b></a> voor meer informatie.     
     </p>
 
     <h3>Aanmeld formulier</h3>
@@ -67,4 +68,12 @@
         </p>
         <input type="submit" value=" Verstuur aanmelding "><br>
     </form>
+{% endblock %}
+{% block script %}
+    var _mailt = "mailto:",
+        _extger = "shs-geronimo.org",
+        _at = "@",
+        _secr = "secretaris",
+        _secr2 = _mailt + _secr + _at + _extger;
+    document.getElementById('email_6').href = _secr2;
 {% endblock %}
