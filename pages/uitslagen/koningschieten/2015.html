@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : Koningschieten : 2015{% endblock %}
+
+{% block banner %}ADL_135176.png{% endblock %}
+{% block logo-position %}top: -160px; left: 490px;{% endblock %}
+
+{% block body %}
+    <h2>Koningschieten 2015</h2>
+    <p>
+        <a href="{% url '/uitslagen/koningschieten.html' %}">Koningschieten</a>:
+        <a href="{% url '/uitslagen/koningschieten/2014.html' %}">2014</a>,
+        <a href="{% url '/uitslagen/koningschieten/2009.html' %}">2009</a>,
+        <a href="{% url '/uitslagen/koningschieten/2007.html' %}">2007</a>,
+        <a href="{% url '/uitslagen/koningschieten/2006.html' %}">2006</a>,
+        <a href="{% url '/uitslagen/koningschieten/2005.html' %}">2005</a>.
+    </p>
+    <p>
+        De wedstrijd vond plaats op zaterdag 27 Juni. De foto's van de
+        wedstrijd zijn op de <a href="{% url '/fotos.html' %}">foto</a> pagina te vinden.
+    </p>
+
+    <h3>Uitslag</h3>
+
+    <table><tr>
+        <td width="240" valign="top">
+            <h5>Recurve</h5>
+            <p>Heren > 18</p>
+            <table width="220">
+                <tr><th width="200">Naam</th><th>Score</th></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td>Jeffrey Maagdenberg</td><td>550</td></tr>
+                <tr><td>Jan van Doorn</td><td>515</td></tr>
+                <tr><td>Bas Mol</td><td>500</td></tr>
+                <tr><td>Maarten de Jong</td><td>475</td></tr>
+                <tr><td>Quirijn Blokker</td><td>427</td></tr>
+                <tr><td>Willem Mol</td><td>362</td></tr>
+                <tr><td>Wout van der Brug</td><td>328</td></tr>
+            </table>
+            <p>Dames > 18</p>
+            <table width="220">
+                <tr><th width="200">Naam</th><th>Score</th></tr>
+                <tr><td>Conny Buzink</td><td>464</td></tr>
+                <tr><td>Marga van Doorn</td><td>460</td></tr>
+            </table>
+            <p>Heren < 18</p>
+            <table width="220">
+                <tr><th width="200">Naam</th><th>Score</th></tr>
+                <tr><td>Oscar Snijders</td><td>440</td></tr>
+                <tr><td>Erik Meijer</td><td>380</td></tr>
+                <tr><td>Rinze Custers</td><td>303</td></tr>
+            </table>
+            <p>Dames < 18</p>
+            <table width="220">
+                <tr><th width="200">Naam</th><th>Score</th></tr>
+                <tr><td>Maeke Maagdenberg</td><td>345</td></tr>
+            </table>
+        </td>
+        <td width="240" valign="top">
+            <h5>Compound</h5>
+            <p>Heren > 18</p>
+            <table width="220">
+                <tr><th width="200">Naam</th><th>Score</th></tr>
+                <tr><td>Kasper Dieho</td><td>662</td></tr>
+                <tr><td>Arjan van Doorn</td><td>564</td></tr>
+            </table>
+        </td>
+        <td width="240" valign="top">
+            <h5>Barebow</h5>
+            <p>Heren > 18</p>
+            <table width="220">
+                <tr><th width="200">Naam</th><th>Score</th></tr>
+                <tr><td>Shaun Maitland</td><td>485</td></tr>
+                <tr><td>Arnold Dittmar</td><td>480</td></tr>
+                <tr><td>Gerwin Postma</td><td>385</td></tr>
+            </table>
+        </td>
+    </tr></table>
+{% endblock %}
