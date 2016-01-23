@@ -21,18 +21,16 @@
 
     <ul>
         <li>
-            <a id="email_voor" href="#">Arnold Dittmar</a> &ndash; voorzitter
+            <a id="email_voorz" href="#">Jeffrey Maagdenberg</a> &ndash; voorzitter
             <ul>
                 <li>Coördinator en aanspreekpunt voor instructeurs</li>
                 <li>Coördinatie demonstraties</li>
                 <li>Public relations</li>
+                <li>Rayonzaken</li>
             </ul>
         </li>
         <li>
-            <a id="email_rayon" href="#">Jeffrey Maagdenberg</a> &ndash; vicevoorzitter en rayonzaken
-        </li>
-        <li>
-            <a id="email_sec" href="#">Wout van de Brug</a> &ndash; secretaris
+            <a id="email_secre" href="#">Wout van de Brug</a> &ndash; secretaris
             <ul>
                 <li>Aanspreekpunt nieuwe cursisten</li>
                 <li>Ledenlijst</li>
@@ -42,14 +40,14 @@
             </ul>
         </li>
         <li>
-            <a id="email_penning" href="#">Kasper Dieho</a> &ndash; penningmeester
+            <a id="email_penni" href="#">Quirijn Blokker</a> &ndash; penningmeester
             <ul>
                 <li>Begroting</li>
                 <li>Financieel jaarverslag</li>
             </ul>
         </li>
         <li>
-            <a id="email_beheer" href="#">Gijs van Doorn</a> &ndash; organisatie en beheer
+            <a id="email_organ" href="#">Gijs van Doorn</a> &ndash; organisatie en beheer
             <ul>
                 <li>Organisatie</li>
                 <li>Catering</li>
@@ -63,7 +61,7 @@
     <p>
         Als u meer informatie wenst, zich in wilt schrijven als lid of
         op wilt geven voor een cursus, kunt u contact opnemen met<br>
-        <a id="email_sec2" href="#">de secretaris</a>.
+        <a id="email_secre2" href="#">de secretaris</a>.
     </p>
 
     <p>
@@ -75,34 +73,37 @@
 
     <p>
         Indien u op- of aanmerkingen heeft over deze website, mail dan
-        naar: <a href="#" id="email_web">Arne de Laat</a>.
+        naar: <a href="#" id="email_webma">Arne de Laat</a>.
     </p>
 {% endblock %}
 
 {% block script %}
-    var _mailt = "mailto:"
-    var _extger = "shs-geronimo.org";
-    var _at = "@";
-    var _voor = "voorzitter"
-    var _voor2 = _mailt + _voor + _at + _extger;
-    var _sec = "secretaris"
-    var _sec2 = _mailt + _sec + _at + _extger;
-    var _wilde = "penningmeester"
-    var _wilde2 = _mailt + _wilde + _at + _extger;
-    var _rayon = "rayonzaken"
-    var _rayon2 = _mailt + _rayon + _at + _extger;
-    var _dieho = "k.dieho"
-    var _dieho2 = _mailt + _dieho + _at + _extger;
-    var _doorn = "qeqe53wd"
-    var _doorn1 = "kpnmail.nl"
-    var _doorn2 = _mailt + _doorn + _at + _doorn1;
-    var _web = "webmaster"
-    var _web2 = _mailt + _web + _at + _extger;
-    document.getElementById('email_voor').href = _voor2;
-    document.getElementById('email_rayon').href = _rayon2;
-    document.getElementById('email_sec').href = _sec2;
-    document.getElementById('email_sec2').href = _sec2;
-    document.getElementById('email_penning').href = _dieho2;
-    document.getElementById('email_web').href = _web2;
-    document.getElementById('email_beheer').href = _doorn2;
+    var _mailt = "mailto:",
+        _extger = "shs-geronimo.org",
+        _extkpn = "kpnmail.nl",
+        _at = "@";
+
+    var _voorz = "voorzitter",
+        _secre = "secretaris",
+        _penni = "penningmeester",
+        _rayon = "rayonzaken",
+        _doorn = "qeqe53wd",
+        _webma = "webmaster";
+
+    var _voorz2 = _mailt + _voorz + _at + _extger,
+        _secre2 = _mailt + _secre + _at + _extger,
+        _penni2 = _mailt + _penni + _at + _extger,
+        _rayon2 = _mailt + _rayon + _at + _extger,
+        _doorn2 = _mailt + _doorn + _at + _extkpn,
+        _webma2 = _mailt + _webma + _at + _extger;
+
+    // Bestuur
+    document.getElementById('email_voorz').href = _voorz2;
+    document.getElementById('email_secre').href = _secre2;
+    document.getElementById('email_penni').href = _penni2;
+    document.getElementById('email_organ').href = _doorn2;
+
+    // Extra
+    document.getElementById('email_secre2').href = _secre2;
+    document.getElementById('email_webma').href = _webma2;
 {% endblock %}
