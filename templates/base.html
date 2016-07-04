@@ -45,33 +45,34 @@
             <div id="bannerContainer">
                 <div id="navcontainer">
                     <ul>
-                        <li><a class="{% if_current_page '/geronimo.html' 'active' '' %}"
+                        <li><a class="{% block current_geronimo %}{% endblock %}"
                                href="{% url '/geronimo.html' %}">Over Geronimo</a></li>
-                        <li><a class="{% if_current_page '/nieuws.html' 'active' '' %}"
-                               href="{% url '/nieuws.html' %}">Nieuws</a></li>
-                        <li><a class="{% if_current_page '/beginnerscursus.html' 'active' '' %}"
+                        <li><a class="{% block current_beginnerscursus %}{% endblock %}"
                                href="{% url '/beginnerscursus.html' %}">Beginnerscursus</a></li>
-                        <li><a class="{% if_current_page '/lidmaatschap.html' 'active' '' %}"
+                        <li><a class="{% block current_aanmelden %}{% endblock %}"
+                               href="{% url '/aanmelden.html' %}">Aanmelden</a></li>
+                        <li><a class="{% block current_lidmaatschap %}{% endblock %}"
                                href="{% url '/lidmaatschap.html' %}">Lidmaatschap</a></li>
-                        <li><a class="{% if_current_page '/workshop.html' 'active' '' %}"
+                        <li><a class="{% block current_workshop %}{% endblock %}"
                                href="{% url '/workshop.html' %}">Workshop</a></li>
-                        <li><a class="{% if_current_page '/openingstijden.html' 'active' '' %}"
+                        <li><a class="{% block current_openingstijden %}{% endblock %}"
                                href="{% url '/openingstijden.html' %}">Openingstijden</a></li>
-                        <li><a class="{% if_current_page '/activiteiten.html' 'active' '' %}"
+                        <li><a class="{% block current_activiteiten %}{% endblock %}"
                                href="{% url '/activiteiten.html' %}">Activiteiten</a></li>
-                        <li><a class="{% if_current_page '/fotos.html' 'active' '' %}"
+                        <li><a class="{% block current_fotos %}{% endblock %}"
                                href="{% url '/fotos.html' %}">Foto's</a></li>
-                        <li><a class="{% if_current_page '/filmpjes.html' 'active' '' %}"
+                        <li><a class="{% block current_filmpjes %}{% endblock %}"
                                href="{% url '/filmpjes.html' %}">Filmpjes</a></li>
-                        <li><a class="{% if_current_page '/adres.html' 'active' '' %}"
+                        <li><a class="{% block current_adres %}{% endblock %}"
                                href="{% url '/adres.html' %}">Adres en route</a></li>
-                        <li><a class="{% if_current_page '/contact.html' 'active' '' %}"
+                        <li><a class="{% block current_contact %}{% endblock %}"
                                href="{% url '/contact.html' %}">Bestuur en contact</a></li>
-                        <li><a class="{% if_current_page '/links.html' 'active' '' %}"
+                        <li><a class="{% block current_links %}{% endblock %}"
                                href="{% url '/links.html' %}">Links</a></li>
                     </ul>
-                    
                 </div>
+                {% block submenu %}
+                {% endblock %}
                 <a href="index.html">
                     <div id="pageHeader">
                         <h1>Geronimo</h1>
@@ -110,15 +111,16 @@
                 bla6 = "at.",
                 bla7 = "net",
                 bla = bla0 + bla1 + bla2 + bla3 + bla4 + bla5 + bla6 + bla7;
-            document.getElementById('email_contact').href = bla;
+            var mail = document.getElementById('email_contact')
+            if (mail !== null) {mail.href = bla};
 
             var sc_project = 2440066,
                 sc_invisible = 1,
-                sc_partition = 23,
-                sc_security = "4fca23f4";
+                sc_security = "4fca23f4",
+                sc_client_storage = "disabled"; 
         </script>
         <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
-        
+
         {% block scripts %}
         {% endblock %}
     </body>

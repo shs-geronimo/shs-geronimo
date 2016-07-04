@@ -1,9 +1,4 @@
-{% extends "base.html" %}
-
-{% block title %}{{ block.super }} : Activiteiten en wedstrijden{% endblock %}
-
-{% block banner %}ADL_135176.png{% endblock %}
-{% block logo-position %}top: -160px; left: 490px;{% endblock %}
+{% extends "activiteiten.html" %}
 
 {% block body %}
     <div style="float: right;">
@@ -17,33 +12,25 @@
 
     <h2>Activiteiten</h2>
     <ul>
-        <li><b>16 januari - 20 maart 2015</b> - Beginnerscursus</li>
-        <li><b>25 april 2015</b> - Introductie buitenschieten</li>
-        <li><b>2, 9 en 16 mei 2015</b> - Workshop instinctief schieten</li>
-        <li><b>31 mei 2015</b> - 3D Schieten Arnhem</li>
-        <li><b>(onbekend)</b> - Workshop pezen maken</li>
-        <li><b>25 september - 27 november 2015</b> - Beginnerscursus</li>
-        <li><b>11 oktober 2015</b> - Historische doedag</li>
-        <li><b>27 december 2015</b> - Kerstverschieting</li>
+        <li>-</li>
     </ul>
 
     <h2>Wedstrijden</h2>
     <ul>
-        <li><b>februari 2015</b> - Club competitie</li>
-        <li><b>27 juni 2015</b> - Koningsschieten</li>
+        <li>-</li>
     </ul>
 
     <h2>Uitslagen en verslagen</h2>
     <ul>
-        <li><a href="{% url '/uitslagen/veldschieten.html' %}">Workshop Veldschieten</a></li>
-        <li><a href="{% url '/uitslagen/paasverschieting.html' %}">Paasverschieting</a></li>
-        <li><a href="{% url '/uitslagen/sinterkerstnieuwjaarsverschieting.html' %}">SinterKerstNieuwjaarsverschieting</a></li>
-        <li><a href="{% url '/uitslagen/koningschieten.html' %}">Koningschieten</a></li>
+        <li><a href="{% url '/activiteiten/koningschieten.html' %}">Koningschieten</a></li>
+        <li><a href="{% url '/activiteiten/veldschieten.html' %}">Workshop Veldschieten</a></li>
+        <li><a href="{% url '/activiteiten/paasverschieting.html' %}">Paasverschieting</a></li>
+        <li><a href="{% url '/activiteiten/sinterkerstnieuwjaarsverschieting.html' %}">SinterKerstNieuwjaarsverschieting</a></li>
     </ul>
 
     <h2>Externe wedstrijden (buiten onze club)</h2>
     <p>
         Voor een volledig overzicht, zie:
-        <a href="http://www.handboogsport.nl/kalender/" target="_blank">Algemene Wedstrijdkalender NHB</a>
+        <a href="http://www.handboogsport.nl/evenementen/" target="_blank">Algemene Wedstrijdkalender NHB</a>
     </p>
 {% endblock %}

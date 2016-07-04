@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block current_activiteiten %}active{% endblock %}
+{% block title %}{{ block.super }} : Activiteiten en wedstrijden{% endblock %}
+
+{% block banner %}ADL_135176.png{% endblock %}
+{% block logo-position %}top: -160px; left: 490px;{% endblock %}
+
+{% block submenu %}
+    <div id="subnavcontainer">
+        <ul>
+            <li><a class="{% block activiteiten_koningschieten %}{% endblock %}"
+                   href="{% url '/activiteiten/koningschieten.html' %}">Koningschieten</a></li>
+            {% block subsubmenu %}
+            {% endblock %}
+<!-- 
+            <li><a class="{% block activiteiten_ladder %}{% endblock %}"
+                   href="{% url '/activiteiten/ladder.html' %}">Ladder</a></li>
+ -->
+            <li><a class="{% block activiteiten_paasverschieting %}{% endblock %}"
+                   href="{% url '/activiteiten/paasverschieting.html' %}">Paasverschieting</a></li>
+            <li><a class="{% block activiteiten_sinterkerstnieuwjaarsverschieting %}{% endblock %}"
+                   href="{% url '/activiteiten/sinterkerstnieuwjaarsverschieting.html' %}">SinterKerstNieuwjaarsverschieting</a></li>
+            <li><a class="{% block activiteiten_veldschieten %}{% endblock %}"
+                   href="{% url '/activiteiten/veldschieten.html' %}">Veldschieten</a></li>
+        </ul>
+    </div>
+
+{% endblock %}

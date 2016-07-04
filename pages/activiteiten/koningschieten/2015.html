@@ -1,20 +1,10 @@
-{% extends "base.html" %}
+{% extends "activiteiten_koningschieten.html" %}
 
-{% block title %}{{ block.super }} : Koningschieten : 2015{% endblock %}
-
-{% block banner %}ADL_135176.png{% endblock %}
-{% block logo-position %}top: -160px; left: 490px;{% endblock %}
+{% block activiteiten_koningschieten_2015 %}active{% endblock %}
+{% block title %}{{ block.super }} : 2015{% endblock %}
 
 {% block body %}
     <h2>Koningschieten 2015</h2>
-    <p>
-        <a href="{% url '/uitslagen/koningschieten.html' %}">Koningschieten</a>:
-        <a href="{% url '/uitslagen/koningschieten/2014.html' %}">2014</a>,
-        <a href="{% url '/uitslagen/koningschieten/2009.html' %}">2009</a>,
-        <a href="{% url '/uitslagen/koningschieten/2007.html' %}">2007</a>,
-        <a href="{% url '/uitslagen/koningschieten/2006.html' %}">2006</a>,
-        <a href="{% url '/uitslagen/koningschieten/2005.html' %}">2005</a>.
-    </p>
     <p>
         De wedstrijd vond plaats op zaterdag 27 Juni. De foto's van de
         wedstrijd zijn op de <a href="{% url '/fotos.html' %}">foto</a> pagina te vinden.

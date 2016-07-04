@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+{% block current_aanmelden %}active{% endblock %}
 {% block title %}{{ block.super }} : Aanmelden beginnerscursus{% endblock %}
 
 {% block banner %}DSC_22439.png{% endblock %}
@@ -24,7 +25,7 @@
     <p>
         Na succesvolle aanmelding zal u een mail ontvangen van ons ter
         bevestiging en meer informatie. Mocht u na <b>6</b> weken nog niets van ons gehoord hebben, 
-        neem dan contact op met de <a id="email_6" href="#"><b>secretaris</b></a> voor meer informatie.     
+        neem dan contact op met de <a id="email_secre" href="#"><b>secretaris</b></a> voor meer informatie.     
     </p>
 
     <h3>Aanmeld formulier</h3>
@@ -48,5 +49,5 @@
         _at = "@",
         _secr = "secretaris",
         _secr2 = _mailt + _secr + _at + _extger;
-    document.getElementById('email_6').href = _secr2;
+    document.getElementById('email_secre').href = _secr2;
 {% endblock %}

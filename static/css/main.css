@@ -50,7 +50,7 @@ table td {
     vertical-align: top;}
 
 #container {
-    background: #ffffff; 
+    background: #ffffff;
     width: 960px;
     margin: 0 auto;
     color: #101010;
@@ -118,7 +118,7 @@ table td {
     color: #ffffff;
     height: 25px;
     padding-top: 3px;
-    padding-bottom: 3px; /*new*/}
+    padding-bottom: 3px;}
 
 #footer span {
     font-size: 11px;
@@ -132,17 +132,24 @@ table td {
 #footer a:hover {
     color: #014483;
     text-decoration: none;}
-    
+
+#subnavcontainer,
 #navcontainer {
+    float: left;
     height: 100%;
     width: 160px;
     color: #ffffff;
     background-color: rgba(13, 76, 115, 0.6);}
 
+#subnavcontainer {
+    background-color: rgba(13, 76, 115, 0.5);
+    width: 230px;}
+
+#subnavcontainer .active,
 #navcontainer .active {
-    color: #CCE3FF;
     background: #0059C5;}
 
+#subnavcontainer ul,
 #navcontainer ul {
     list-style: none;
     margin: 0;
@@ -150,29 +157,34 @@ table td {
 
 #navcontainer li { }
 
+#subnavcontainer a,
 #navcontainer a {
     display: block;
-    color: #fff;
+    color: white;
     text-decoration: none;
     padding: 1px 15px;
-    height: 16px; /*new*/
+    height: 16px;
     font-size: 13px;}
 
+#subnavcontainer a:hover,
 #navcontainer a:hover {
-    color: #ffffff;
-    background: #0059C5;}
+    background: white;
+    color: #0059C5;}
 
+#subnavcontainer ul ul,
 #navcontainer ul ul {
     padding: 0;
     margin: 0;}
 
+#subnavcontainer ul ul a,
 #navcontainer ul ul a {
     display: block;
+    text-weight: bold;
     text-decoration: none;
     padding-left: 18px;
-    color: #11477f;
-    font-size: 11px;
-    height: 14px; /*new*/}
+    color: #D9E7F7;
+    font-size: 12px;
+    height: 13px;}
 
 .textw {
     width: 640px;}

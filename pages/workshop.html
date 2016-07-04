@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+{% block current_workshop %}active{% endblock %}
 {% block title %}{{ block.super }} : Workshop{% endblock %}
 
 {% block banner %}ADL_104649.png{% endblock %}
@@ -45,7 +46,7 @@
     </p>
 
     <p class="textw">
-        Neem voor meer informatie contact op met de <a id="_Arnold"
+        Neem voor meer informatie contact op met de <a id="email_voorz"
         href="#">voorzitter</a>.
     </p><br>
 
@@ -62,6 +63,6 @@
      var _extger = "shs-geronimo.org";
      var _at = "@";
      var _voorz = "voorzitter"
-     var _voorz2 = _mailt+_voorz+_at+_extger;
-     document.getElementById('_Arnold').href = _voorz2;
+     var _voorz2 = _mailt + _voorz + _at + _extger;
+     document.getElementById('email_voorz').href = _voorz2;
 {% endblock %}

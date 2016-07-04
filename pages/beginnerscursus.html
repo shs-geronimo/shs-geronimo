@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+{% block current_beginnerscursus %}active{% endblock %}
 {% block title %}{{ block.super }} : Beginnerscursussen{% endblock %}
 
 {% block banner %}DSC_22393.png{% endblock %}
@@ -127,7 +128,7 @@
     krijgt u alle materiaal van de club, wel is het handig strakke
     kleding aan te doen en makkelijke loop schoenen. Neem
     <a href="{% url '/contact.html' %}"><b>contact</b></a> op met de
-    <a id="email_6" href="#"><b>secretaris</b></a> voor meer informatie.
+    <a id="email_secre" href="#"><b>secretaris</b></a> voor meer informatie.
 </p>
 
 {% endblock %}
@@ -138,5 +139,5 @@
         _at = "@",
         _secr = "secretaris",
         _secr2 = _mailt + _secr + _at + _extger;
-    document.getElementById('email_6').href = _secr2;
+    document.getElementById('email_secre').href = _secr2;
 {% endblock %}
