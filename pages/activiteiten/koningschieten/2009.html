@@ -4,70 +4,85 @@
 {% block title %}{{ block.super }} : 2009{% endblock %}
 
 {% block body %}
-    <h2>Koningschieten 2009</h2>
-    <p>
-        De wedstrijd vond plaats op zaterdag 12 September.<br>
-        Er deden deze keer twee deelnemers mee met een barebow, zij
-        schoten op 40 en 20 meter.<br>
-        De rest, recurve en compound, schoot op de gebruikelijke 50en 30
-        meter.
-    </p>
 
-    <h3>Uitslag</h3>
-    <table><tr><td width="240" valign="top">
-        <h5>Recurve</h5>
-        <p>Heren:</p>
-        <table width="220">
-            <tr><th width="40">Naam</th><th width="40">Score</th></tr>
-            <tr><td>Kasper Dieho</td><td></td></tr>
-            <tr><td>-</td><td></td></tr>
-            <tr><td>-</td><td></td></tr>
-            <tr><td>Arne de Laat</td><td></td></tr>
-            <tr><td>-</td><td></td></tr>
-            <tr><td>-</td><td></td></tr>
-        </table>
-        <p>Jongens:</p>
-        <table width="220">
-            <tr><th width="40">Naam</th><th width="40">Score</th></tr>
-            <tr><td>-</td><td></td></tr>
-        </table>
-        <p>Dames:</p>
-        <table width="220">
-            <tr><th width="40">Naam</th><th width="40">Score</th></tr>
-            <tr><td>-</td><td></td></tr>
-            <tr><td>-</td><td></td></tr>
-        </table>
-    </td>
-    <td width="240" valign="top">
-        <h5>Compound</h5>
-        <p>Heren:</p>
-        <table width="220">
-            <tr><th width="40">Naam</th><th width="40">Score</th></tr>
-            <tr><td>Sander de Vries (1)</td><td></td></tr>
-            <tr><td>Peter de Wilde (2)</td><td></td></tr>
-            <tr><td>Peter de Jong</td><td></td></tr>
-        </table>
-        <p>Dames:</p>
-        <table width="220">
-            <tr><th width="40">Naam</th><th width="40">Score</th></tr>
-            <tr><td>Françoise Weijters (1)</td><td></td></tr>
-        </table>
-    </td>
-    <td width="240" valign="top">
-        <h5>Barebow</h5>
-        <p>Heren:</p>
-        <table width="220">
-            <tr><th width="40">Naam</th><th width="40">Score</th></tr>
-            <tr><td>Arnold Dittmar</td><td></td></tr>
-        </table>
-        <p>Jongens:</p>
-        <table width="220">
-            <tr><th width="40">Naam</th><th width="40">Score</th></tr>
-            <tr><td>Jelle Dittmar</td><td></td></tr>
-        </table>
-    </td></tr></table>
-    <p>
-        (1) buiten mededinging, is al keijzer(in)<br>
-        (2) buiten mededinging
-    </p>
+{% filter markdown:'tables,markdown-in-html' %}
+
+## Koningschieten 2009
+
+De wedstrijd vond plaats op zaterdag 12 september.<br>
+Er deden deze keer twee deelnemers mee met een barebow, zij schoten op 40 en
+20 meter.<br>
+De rest, recurve en compound, schoot op de gebruikelijke 50 en 30 meter.
+
+### Uitslagen
+
+<div markdown='1' class='table-left'>
+### Recurve
+
+#### Heren
+
+| Naam                   | Score |
+|------------------------|------:|
+| Kasper Dieho           |       |
+| -                      |       |
+| -                      |       |
+| Arne de Laat           |       |
+| -                      |       |
+| -                      |       |
+
+#### Dames
+
+| Naam                   | Score |
+|------------------------|------:|
+| -                      |       |
+| -                      |       |
+
+#### Heren jeugd
+
+| Naam                   | Score |
+|------------------------|------:|
+| -                      |       |
+</div>
+
+<div markdown='1' class='table-left'>
+### Compound
+
+#### Heren
+
+| Naam                   | Score |
+|------------------------|------:|
+| Sander de Vries (1)    |       |
+| Peter de Wilde (2)     |       |
+| Peter de Jong          |       |
+
+#### Dames
+
+| Naam                   | Score |
+|------------------------|------:|
+| Françoise Weijters (1) |       |
+</div>
+
+<div markdown='1' class='table-left'>
+### Barebow
+
+#### Heren
+
+| Naam                   | Score |
+|------------------------|------:|
+| Arnold Dittmar         |       |
+
+#### Heren jeugd
+
+| Naam                   | Score |
+|------------------------|------:|
+| Jelle Dittmar          |       |
+</div>
+
+<div class='clearer'></div>
+
+(1) buiten mededinging, is al keijzer(in)<br>
+(2) buiten mededinging
+
+{% endfilter %}
+
 {% endblock %}

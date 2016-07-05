@@ -4,6 +4,14 @@
 {% block activiteiten_koningschieten %}active{% endblock %}
 {% block title %}{{ block.super }} : Koningschieten{% endblock %}
 
+{% block style %}
+    .table-left table {
+        width: 200px;}
+    
+    .table-left table th:first-child {
+        width: 150px;}
+{% endblock %}
+
 {% block subsubmenu %}
     <ul>
         <li><a class="{% block activiteiten_koningschieten_2016 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2016.html' %}">2016</a></li>

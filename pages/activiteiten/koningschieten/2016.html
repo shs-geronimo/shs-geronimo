@@ -1,67 +1,78 @@
 {% extends "activiteiten_koningschieten.html" %}
 
 {% block activiteiten_koningschieten_2016 %}active{% endblock %}
-{% block title %}{{ block.super }} : 2015{% endblock %}
+{% block title %}{{ block.super }} : 2016{% endblock %}
 
 {% block body %}
-    <h2>Koningschieten 2015</h2>
-    <p>
-        Het was een dag met vele gezichten. Om de juiste beslissing te nemen
-        is het altijd lastig. Gelukkig is de juiste genomen. Buiten schieten!!!
-        Er waren 15 deelnemers. Hiermee hebben we in de regen, zonneschijn,
-        wind, hardere wind het jaarlijkse koningsschieten gehouden.
-    </p>
 
-    <h3>Uitslag</h3>
+{% filter markdown:'tables,markdown-in-html' %}
 
-    <table><tr>
-        <td width="240" valign="top">
-            <h5>Recurve</h5>
-            <p>Heren > 18</p>
-            <table width="220">
-                <tr><th width="200">Naam</th><th>Score</th></tr>
-                <tr><td>Bas Mol</td><td>410</td></tr>
-                <tr><td>Craig Bel</td><td>404</td></tr>
-                <tr><td>Quirijn Blokker</td><td>266</td></tr>
-                <tr><td>Wout vd Brug</td><td>232</td></tr>
-                <tr><td>Maarten de Jong</td><td>-</td></tr>
-            </table>
-            <p>Dames > 18</p>
-            <table width="220">
-                <tr><th width="200">Naam</th><th>Score</th></tr>
-                <tr><td>Carola Blokker</td><td>342</td></tr>
-                <tr><td>Daphne  Geurtsen</td><td>217</td></tr>
-                <tr><td>Hanneke v.d. Heuvel</td><td>160</td></tr>
-                <tr><td>Suus v. Zorge</td><td>134</td></tr>
-            </table>
-            <p>Dames < 18</p>
-            <table width="220">
-                <tr><th width="200">Naam</th><th>Score</th></tr>
-                <tr><td>Moira v. Uunen</td><td>365</td></tr>
-            </table>
-        </td>
-        <td width="240" valign="top">
-            <h5>Compound</h5>
-            <p>Heren > 18</p>
-            <table width="220">
-                <tr><th width="200">Naam</th><th>Score</th></tr>
-                <tr><td>Jan van Doorn</td><td>501</td></tr>
-                <tr><td>Shaun Maitland</td><td>493</td></tr>
-            </table>
-        </td>
-        <td width="240" valign="top">
-            <h5>Barebow</h5>
-            <p>Heren > 18</p>
-            <table width="220">
-                <tr><th width="200">Naam</th><th>Score</th></tr>
-                <tr><td>Danny Martherus</td><td>393</td></tr>
-            </table>
-            <p>Dames > 18</p>
-            <table width="220">
-                <tr><th width="200">Naam</th><th>Score</th></tr>
-                <tr><td>Conny Buzink</td><td>308</td></tr>
-                <tr><td>Isabelle Aarts</td><td>306</td></tr>
-            </table>
-        </td>
-    </tr></table>
+## Koningschieten 2016
+
+Het was een dag met vele gezichten. Om de juiste beslissing te nemen
+is het altijd lastig. Gelukkig is de juiste genomen. Buiten schieten!!!
+Er waren 15 deelnemers. Hiermee hebben we in de regen, zonneschijn,
+wind, hardere wind het jaarlijkse koningsschieten gehouden.
+
+### Uitslagen
+
+<div markdown='1' class='table-left'>
+### Recurve
+
+#### Heren
+
+| Naam                | Score |
+|---------------------|------:|
+| Bas Mol             | 410   |
+| Craig Bel           | 404   |
+| Quirijn Blokker     | 266   |
+| Wout vd Brug        | 232   |
+| Maarten de Jong     | -     |
+
+#### Dames
+
+| Naam                | Score |
+|---------------------|------:|
+| Carola Blokker      | 342   |
+| Daphne Geurtsen     | 217   |
+| Hanneke v.d. Heuvel | 160   |
+| Suus v. Zorge       | 134   |
+
+#### Dames jeugd
+
+| Naam                | Score |
+|---------------------|------:|
+| Moira v. Uunen      | 365   |
+</div>
+
+<div markdown='1' class='table-left'>
+### Compound
+
+#### Heren
+
+| Naam            | Score |
+|-----------------|------:|
+| Jan van Doorn   | 501   |
+| Shaun Maitland  | 493   |
+</div>
+
+<div markdown='1' class='table-left'>
+### Barebow
+
+#### Heren
+
+| Naam            | Score |
+|-----------------|------:|
+| Danny Martherus | 393   |
+
+#### Dames
+
+| Naam            | Score |
+|-----------------|------:|
+| Conny Buzink    | 308   |
+| Isabelle Aarts  | 306   |
+</div>
+
+{% endfilter %}
+
 {% endblock %}
