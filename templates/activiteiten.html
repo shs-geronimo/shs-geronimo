@@ -9,21 +9,30 @@
 {% block submenu %}
     <div id="subnavcontainer">
         <ul>
-            <li><a class="{% block activiteiten_koningschieten %}{% endblock %}"
-                   href="{% url '/activiteiten/koningschieten.html' %}">Koningschieten</a></li>
-            {% block subsubmenu %}
-            {% endblock %}
-<!-- 
-            <li><a class="{% block activiteiten_ladder %}{% endblock %}"
-                   href="{% url '/activiteiten/ladder.html' %}">Ladder</a></li>
+            <li>
+                <a class="{% block activiteiten_koningschieten %}{% endblock %}"
+                   href="{% url '/activiteiten/koningschieten.html' %}">Koningschieten</a>
+                {% block subsubmenu %}
+                {% endblock %}
+            </li>
+<!--
+            <li>
+                <a class="{% block activiteiten_ladder %}{% endblock %}"
+                   href="{% url '/activiteiten/ladder.html' %}">Ladder</a>
+            </li>
  -->
-            <li><a class="{% block activiteiten_paasverschieting %}{% endblock %}"
-                   href="{% url '/activiteiten/paasverschieting.html' %}">Paasverschieting</a></li>
-            <li><a class="{% block activiteiten_sinterkerstnieuwjaarsverschieting %}{% endblock %}"
-                   href="{% url '/activiteiten/sinterkerstnieuwjaarsverschieting.html' %}">SinterKerstNieuwjaarsverschieting</a></li>
-            <li><a class="{% block activiteiten_veldschieten %}{% endblock %}"
-                   href="{% url '/activiteiten/veldschieten.html' %}">Veldschieten</a></li>
+            <li>
+                <a class="{% block activiteiten_paasverschieting %}{% endblock %}"
+                   href="{% url '/activiteiten/paasverschieting.html' %}">Paasverschieting</a>
+            </li>
+            <li>
+                <a class="{% block activiteiten_sinterkerstnieuwjaarsverschieting %}{% endblock %}"
+                   href="{% url '/activiteiten/sinterkerstnieuwjaarsverschieting.html' %}">SinterKerstNieuwjaarsverschieting</a>
+            </li>
+            <li>
+                <a class="{% block activiteiten_veldschieten %}{% endblock %}"
+                   href="{% url '/activiteiten/veldschieten.html' %}">Veldschieten</a>
+            </li>
         </ul>
     </div>
-
 {% endblock %}

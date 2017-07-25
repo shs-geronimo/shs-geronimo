@@ -270,6 +270,10 @@ h6 {
     height: 140px;
 }
 
+.faded {
+    color: #bbb;
+}
+
 .clearer {
     clear: both;
 }
