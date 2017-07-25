@@ -45,19 +45,10 @@
         </li><li class="thu s60" id="S60_051218_1">
     </ul>
 
-    <div class="quicktime" id="movie" style="background-color:#ffffff; height:665px;">
-        <img id="poster" alt="" style="margin:0px 235px;" class="showing"
+    <div id="movie" style="background-color:#ffffff; height:665px;">
+        <img id="poster" class="showing" style="margin:0px 235px;"
              data-id="D80_090906_2" src="{% static '/static/images_filmpjes/clicktoplay.jpg' %}" />
-        <video id="player" height="0" width="0">
-            <p>
-                Your browser does not support HTML 5, upgrade to a newer version that does:
-                    <a class="sup" id="sf" href="http://www.apple.com/safari/" title="Safari 4+">
-                </a><a class="sup" id="ch" href="http://www.google.com/chrome" title="Google Chrome 5+">
-                </a><a class="sup" id="ff" href="http://www.firefox.com/" title="Firefox 3.5+">
-                </a><a class="sup" id="op" href="http://www.opera.com/" title="Opera 10.60+">
-                </a><a class="sup" id="ie" href="http://ie.microsoft.com/testdrive/" title="Internet Explorer 9"></a>
-            </p>
-        </video>
+        <video id="player"></video>
     </div>
 {% endblock %}
 

@@ -1,223 +1,275 @@
 body {
-    font: 13px 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif;
     margin: 0 10px 0 40px;
-    color: #111111;
-    background: url(../images/body_bg.png) repeat-x scroll #555555;
-    text-align: left;}
+    background: url(../images/body_bg.png) repeat-x scroll #555;
+    text-align: left;
+    color: #111;
+    font: 13px 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif;
+}
 
 img {
-    border: none;}
+    border: none;
+}
 
 b,
 strong {
-    font-weight: bold;}
+    font-weight: bold;
+}
 
 a:link {
-    color: #0054DD;
-    text-decoration: none;}
+    text-decoration: none;
+    color: #0054dd;
+}
 
 a:visited {
+    text-decoration: none;
     color: #003180;
-    text-decoration: none;}
+}
 
 a:hover,
 a:active {
-    color: #0062FF;
-    text-decoration: underline;}
+    text-decoration: underline;
+    color: #0062ff;
+}
 
 .table-left,
 .image-left {
+    float: left;
     margin: 3px;
     padding: 3px;
-    float: left;}
+}
 
 .image-right {
+    float: right;
     margin: 3px;
     padding: 3px;
-    float: right;}
+}
 
 table {
-    background-color: #ffffff;
     border: 0;
+    background-color: #fff;
+    border-collapse: collapse;
     border-spacing: 0;
-    border-collapse: collapse;}
+}
 
 table th {
-    background-color: #D9EDFF;
-    padding: 4px;}
+    background-color: #d9edff;
+    padding: 4px;
+}
 
 table td {
     padding: 2px;
-    vertical-align: top;}
+    vertical-align: top;
+}
 
 #container {
-    background: #ffffff;
-    width: 960px;
     margin: 0 auto;
-    color: #101010;
-    font-family: Helvetica, 'Lucida Grande', LucidaGrande, Lucida, Arial, sans-serif;}
+    background: #fff;
+    width: 960px;
+    color: #111;
+    font-family: Helvetica, 'Lucida Grande', LucidaGrande, Lucida, Arial, sans-serif;
+}
 
 #pageHeader {
-    width: 207px;
-    height: 138px;
-    text-align: left;
-    list-style: none;
-    background-image: url(../images/geronimo-logo.png);
-    text-indent: -9999px;
+    position: relative;
     top: -180px;
     left: 280px;
-    position: relative;}
+    background-image: url(../images/geronimo-logo.png);
+    width: 207px;
+    height: 138px;
+    list-style: none;
+    text-align: left;
+    text-indent: -9999px;
+}
 
 #pageHeader img {
     float: left;
+    padding-top: 10px;
     padding-left: 10px;
-    padding-top: 10px;}
+}
 
 #pageHeader h1 {
-    color: #424242;
     margin: 0;
-    font-weight: normal;
-    font-size: 28px;
     padding: 15px 20px 0 190px;
-    text-shadow: 0 0 2px #b0c4de;}
+    text-shadow: 0 0 2px #b0c4de;
+    color: #444;
+    font-size: 28px;
+    font-weight: normal;
+}
 
 #pageHeader h2 {
-    color: #999999;
     margin: 0;
-    font-size: 14px;
-    font-weight: normal;
     padding-right: 20px;
     padding-left: 190px;
-    text-shadow: 0 0 1px #b0c4de;}
+    text-shadow: 0 0 1px #b0c4de;
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+}
 
 #bannerContainer {
-    width: 960px;
     float: left;
-    text-align: left;
+    margin: 0;
     background: url(../images_site/ADL_060178.png) no-repeat;
+    width: 960px;
     height: 216px; /* 176 */
-    margin: 0;}
+    text-align: left;
+}
 
 #contentContainer {
+    float: left;
+    padding-bottom: 10px;
+    width: 960px;
     min-height: 375px;
     text-align: left;
-    float: left;
-    width: 960px;
-    padding-bottom: 10px;}
+}
 
 #contentContainer #content {
-    line-height: 1.3em;
+    padding-top: 5px;
     padding-right: 23px;
     padding-left: 23px;
-    padding-top: 5px;}
+    line-height: 1.3em;
+}
 
 #footer {
-    width: 960px;
     margin: 0 auto 7px;
     background: repeat-x url(../images/footer_bg.png);
-    text-align: left;
-    color: #ffffff;
-    height: 25px;
     padding-top: 3px;
-    padding-bottom: 3px;}
+    padding-bottom: 3px;
+    width: 960px;
+    height: 25px;
+    text-align: left;
+    color: #fff;
+}
 
 #footer span {
-    font-size: 11px;
     margin-top: 4px;
+    margin-right: 15px;
     margin-left: 15px;
-    margin-right: 15px;}
+    font-size: 11px;
+}
 
 #footer a {
-    color: #fff;}
+    color: #fff;
+}
 
 #footer a:hover {
+    text-decoration: none;
     color: #014483;
-    text-decoration: none;}
+}
 
 #subnavcontainer,
 #navcontainer {
     float: left;
-    height: 100%;
+    background-color: rgba(13, 76, 115, 0.6);
     width: 160px;
-    color: #ffffff;
-    background-color: rgba(13, 76, 115, 0.6);}
+    height: 100%;
+    color: #fff;
+}
 
 #subnavcontainer {
     background-color: rgba(13, 76, 115, 0.5);
-    width: 230px;}
+    width: 230px;
+}
 
 #subnavcontainer .active,
 #navcontainer .active {
-    background: #0059C5;}
+    background: #0059c5;
+}
 
 #subnavcontainer ul,
 #navcontainer ul {
-    list-style: none;
     margin: 0;
-    padding: 0;}
-
-#navcontainer li { }
+    padding: 0;
+    list-style: none;
+}
 
 #subnavcontainer a,
 #navcontainer a {
     display: block;
-    color: white;
-    text-decoration: none;
     padding: 1px 15px;
     height: 16px;
-    font-size: 13px;}
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
 
 #subnavcontainer a:hover,
 #navcontainer a:hover {
-    background: white;
-    color: #0059C5;}
+    background: #fff;
+    color: #0059c5;
+}
 
 #subnavcontainer ul ul,
 #navcontainer ul ul {
+    margin: 0;
     padding: 0;
-    margin: 0;}
+}
 
 #subnavcontainer ul ul a,
 #navcontainer ul ul a {
     display: block;
-    text-weight: bold;
-    text-decoration: none;
     padding-left: 18px;
-    color: #D9E7F7;
+    height: 13px;
+    text-decoration: none;
+    color: #d9e7f7;
     font-size: 12px;
-    height: 13px;}
+    font-weight: bold;
+}
 
 .textwidth {
-    width: 640px;}
+    width: 640px;
+}
 
-h1, h2, h3, h4, h5, h6 {
-    color: #0055AA;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.8em;
+    color: #05a;
     font-weight: normal;
-    margin-bottom: 0.8em;}
+}
 
-h1 {font-size: 28px;}
-h2 {font-size: 24px;}
-h3 {font-size: 20px;}
-h4 {font-size: 18px;}
-h5 {font-size: 16px;}
-h5 {font-size: 15px;}
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 15px;
+}
 
 #index td {
-    text-align: center;
-    vertical-align: middle;
     width: 205px;
-    height: 170px;}
+    height: 170px;
+    vertical-align: middle;
+    text-align: center;
+}
 
 #index img {
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
     margin-bottom: 10px;
-    -moz-box-shadow: 2px 2px 10px #888;
-    -webkit-box-shadow: 2px 2px 10px #888;
+    border-radius: 5px;
     box-shadow: 2px 2px 10px #888;
     width: 187px;
-    height: 140px;}
+    height: 140px;
+}
 
 .clearer {
-	clear: both;}
+    clear: both;
+}
