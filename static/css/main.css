@@ -274,6 +274,13 @@ h6 {
     color: #bbb;
 }
 
+.album {
+    width: 100%;
+    border: 0;
+    overflow: auto;
+    background-color: transparent;
+}
+
 .clearer {
     clear: both;
 }
