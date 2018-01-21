@@ -7,19 +7,23 @@
 {% block style %}
     .table-left table {
         width: 200px;}
-    
+
     .table-left table th:first-child {
         width: 150px;}
 {% endblock %}
 
-{% block subsubmenu %}
-    <ul>
-        <li><a class="{% block activiteiten_koningschieten_2016 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2016.html' %}">2016</a></li>
-        <li><a class="{% block activiteiten_koningschieten_2015 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2015.html' %}">2015</a></li>
-        <li><a class="{% block activiteiten_koningschieten_2014 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2014.html' %}">2014</a></li>
-        <li><a class="{% block activiteiten_koningschieten_2009 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2009.html' %}">2009</a></li>
-        <li><a class="{% block activiteiten_koningschieten_2007 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2007.html' %}">2007</a></li>
-        <li><a class="{% block activiteiten_koningschieten_2006 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2006.html' %}">2006</a></li>
-        <li><a class="{% block activiteiten_koningschieten_2005 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2005.html' %}">2005</a></li>
-    </ul>
+{% block submenu %}
+    {{ block.super }}
+    <div id="subsubnavcontainer">
+        <ul>
+            <li><a class="{% block activiteiten_koningschieten_2017 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2017.html' %}">2017</a></li>
+            <li><a class="{% block activiteiten_koningschieten_2016 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2016.html' %}">2016</a></li>
+            <li><a class="{% block activiteiten_koningschieten_2015 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2015.html' %}">2015</a></li>
+            <li><a class="{% block activiteiten_koningschieten_2014 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2014.html' %}">2014</a></li>
+            <li><a class="{% block activiteiten_koningschieten_2009 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2009.html' %}">2009</a></li>
+            <li><a class="{% block activiteiten_koningschieten_2007 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2007.html' %}">2007</a></li>
+            <li><a class="{% block activiteiten_koningschieten_2006 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2006.html' %}">2006</a></li>
+            <li><a class="{% block activiteiten_koningschieten_2005 %}{% endblock %}" href="{% url '/activiteiten/koningschieten/2005.html' %}">2005</a></li>
+        </ul>
+    </div>
 {% endblock %}

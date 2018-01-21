@@ -1,0 +1,14 @@
+{% extends "activiteiten.html" %}
+
+{% block activiteiten_competitie %}active{% endblock %}
+{% block title %}{{ block.super }} : Competitie{% endblock %}
+
+{% block body %}
+    <h2>Competitie</h2>
+
+    <p>
+        Dit is een competitie binnen de club tussen de leden, zie
+        de <a href="{% url '/activiteiten.html' %}">activiteiten</a>
+        pagina voor de wedstrijd momenten.
+    </p>
+{% endblock %}

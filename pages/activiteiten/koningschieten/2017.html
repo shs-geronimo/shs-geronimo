@@ -1,0 +1,70 @@
+{% extends "activiteiten_koningschieten.html" %}
+
+{% block activiteiten_koningschieten_2016 %}active{% endblock %}
+{% block title %}{{ block.super }} : 2016{% endblock %}
+
+{% block body %}
+
+{% filter markdown:'tables,markdown-in-html' %}
+
+## Koningschieten 2017
+
+### Uitslagen
+
+<div markdown='1' class='table-left'>
+### Recurve
+
+#### Heren
+
+| Naam                | Score |
+|---------------------|-------|
+| Pauli Sievinen      | ?     |
+
+#### Dames
+
+| Naam                | Score |
+|---------------------|-------|
+| Suus van Zorge      | ?     |
+
+#### Dames jeugd
+
+| Naam                | Score |
+|---------------------|-------|
+| Maeike Maagdenberg  | ?     |
+
+#### Heren jeugd
+
+| Naam                | Score |
+|---------------------|-------|
+| Olav Smits          | ?     |
+</div>
+
+<div markdown='1' class='table-left'>
+### Compound
+
+#### Heren
+
+| Naam            | Score |
+|-----------------|-------|
+| Guus Schulz     | ?     |
+</div>
+
+<div markdown='1' class='table-left'>
+### Barebow
+
+#### Heren
+
+| Naam              | Score |
+|-------------------|-------|
+| Winfrid v/d Kroef | ?     |
+
+#### Dames
+
+| Naam            | Score |
+|-----------------|-------|
+| Conny Buzink    | ?     |
+</div>
+
+{% endfilter %}
+
+{% endblock %}

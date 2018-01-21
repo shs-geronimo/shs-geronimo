@@ -54,6 +54,7 @@ table {
 table th {
     background-color: #d9edff;
     padding: 4px;
+    padding: 5px;
 }
 
 table td {
@@ -157,64 +158,60 @@ table td {
     color: #014483;
 }
 
+#subsubnavcontainer,
 #subnavcontainer,
 #navcontainer {
     float: left;
     background-color: rgba(13, 76, 115, 0.6);
-    width: 160px;
     height: 100%;
     color: #fff;
 }
 
 #subnavcontainer {
     background-color: rgba(13, 76, 115, 0.5);
-    width: 230px;
 }
 
+#subsubnavcontainer {
+    background-color: rgba(13, 76, 115, 0.4);
+}
+
+#subsubnavcontainer .active,
 #subnavcontainer .active,
 #navcontainer .active {
     background: #0059c5;
 }
 
+#subsubnavcontainer ul,
 #subnavcontainer ul,
 #navcontainer ul {
     margin: 0;
     padding: 0;
+    padding-top: 5px;
     list-style: none;
 }
 
+#subsubnavcontainer a,
 #subnavcontainer a,
 #navcontainer a {
     display: block;
-    padding: 1px 15px;
+    padding: 1px 20px 1px 15px;
     height: 16px;
     text-decoration: none;
     color: #fff;
     font-size: 13px;
 }
 
+#subsubnavcontainer a {
+    font-weight: bold;
+}
+
+#subsubnavcontainer a:hover,
 #subnavcontainer a:hover,
 #navcontainer a:hover {
     background: #fff;
     color: #0059c5;
 }
 
-#subnavcontainer ul ul,
-#navcontainer ul ul {
-    margin: 0;
-    padding: 0;
-}
-
-#subnavcontainer ul ul a,
-#navcontainer ul ul a {
-    display: block;
-    padding-left: 18px;
-    height: 13px;
-    text-decoration: none;
-    color: #d9e7f7;
-    font-size: 12px;
-    font-weight: bold;
-}
 
 .textwidth {
     width: 640px;
