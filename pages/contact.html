@@ -58,8 +58,7 @@
     <h2>Wilt u meer informatie?</h2>
     <p>
         Als u meer informatie wenst, zich in wilt schrijven als lid of
-        op wilt geven voor een cursus, kunt u contact opnemen met<br>
-        <a id="email_secre2" href="#">de secretaris</a>.
+        op wilt geven voor een cursus, kunt u contact opnemen met de secretaris.
     </p>
 
     <p>
@@ -78,19 +77,16 @@
 {% block script %}
     var _mailt = "mailto:",
         _extger = "shs-geronimo.org",
-        _extkpn = "kpnmail.nl",
         _at = "@";
 
     var _voorz = "voorzitter",
         _secre = "secretaris",
         _penni = "penningmeester",
-        _rayon = "rayonzaken",
         _webma = "webmaster";
 
     var _voorz2 = _mailt + _voorz + _at + _extger,
         _secre2 = _mailt + _secre + _at + _extger,
         _penni2 = _mailt + _penni + _at + _extger,
-        _rayon2 = _mailt + _rayon + _at + _extger,
         _webma2 = _mailt + _webma + _at + _extger;
 
     // Bestuur
@@ -99,6 +95,5 @@
     document.getElementById('email_penni').href = _penni2;
 
     // Extra
-    document.getElementById('email_secre2').href = _secre2;
     document.getElementById('email_webma').href = _webma2;
 {% endblock %}
