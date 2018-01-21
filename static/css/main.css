@@ -1,6 +1,10 @@
+html {
+    background-color: #555;
+}
+
 body {
-    margin: 0 10px 0 40px;
-    background: url(../images/body_bg.png) repeat-x scroll #555;
+    margin: 0;
+    background: linear-gradient(to bottom, #444 215px, #333 225px, #555 226px);
     text-align: left;
     color: #111;
     font: 13px 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif;
@@ -53,12 +57,11 @@ table {
 
 table th {
     background-color: #d9edff;
-    padding: 4px;
     padding: 5px;
 }
 
 table td {
-    padding: 2px;
+    padding: 2px 5px;
     vertical-align: top;
 }
 
@@ -110,10 +113,14 @@ table td {
 #bannerContainer {
     float: left;
     margin: 0;
-    background: url(../images_site/ADL_060178.png) no-repeat;
+    background-image: url(../images_site/ADL_060178.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 960px;
-    height: 216px; /* 176 */
+    height: 226px;
     text-align: left;
+    overflow: hidden;
 }
 
 #contentContainer {
