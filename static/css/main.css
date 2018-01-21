@@ -71,7 +71,7 @@ table td {
 
 #pageHeader {
     position: relative;
-    top: -180px;
+    top: 20px;
     left: 280px;
     background-image: url(../images/geronimo-logo.png);
     width: 207px;
