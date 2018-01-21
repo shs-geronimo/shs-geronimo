@@ -254,7 +254,7 @@ h6 {
 
 #index td {
     width: 205px;
-    height: 170px;
+    height: 190px;
     vertical-align: middle;
     text-align: center;
 }
@@ -262,7 +262,7 @@ h6 {
 #index img {
     margin-bottom: 10px;
     border-radius: 5px;
-    box-shadow: 2px 2px 10px #888;
+    box-shadow: 1px 1px 8px #888;
     width: 187px;
     height: 140px;
 }
