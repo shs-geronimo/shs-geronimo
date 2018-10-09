@@ -1,0 +1,67 @@
+{% extends "activiteiten_koningschieten.html" %}
+
+{% block activiteiten_koningschieten_2018 %}active{% endblock %}
+{% block title %}{{ block.super }} : 2018{% endblock %}
+
+{% block body %}
+
+{% filter markdown:'tables,markdown-in-html' %}
+
+## Koningschieten 2018
+
+Vanwege de constante regen op de dag van het koningschieten
+is besloten om de wedstrijd binnen te houden. Iedereen heeft
+beide reeksen van 30 pijlen op 18 meter geschoten.
+
+### Uitslagen
+
+<div markdown='1' class='table-left'>
+### Recurve
+
+#### Dames
+
+| Naam                | Score |
+|---------------------|-------|
+| Vehnaoush           | 420   |
+| Suus                | 419   |
+| Janine              | 274   |
+
+#### Heren
+
+| Naam                | Score |
+|---------------------|-------|
+| Pauli               | 498   |
+| Craig               | 483   |
+| Harm Jan            | 440   |
+| Andre               | 338   |
+| Arne                | 323   |
+| Wout                | 244   |
+
+#### Heren jeugd
+
+| Naam                | Score |
+|---------------------|-------|
+| Pepijn              | 220   |
+</div>
+
+<div markdown='1' class='table-left'>
+### Barebow
+
+#### Dames
+
+| Naam                | Score |
+|---------------------|-------|
+| Daphne              | 185   |
+
+#### Heren
+
+| Naam                | Score |
+|---------------------|-------|
+| Sander              | 222   |
+| Vincent             | 154   |
+| Mike                | 121   |
+</div>
+
+{% endfilter %}
+
+{% endblock %}
