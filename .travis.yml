@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.5"
+  - "3.6"
 
 # Work around for boto bug:
 # https://github.com/boto/boto/issues/3717#issuecomment-430894557
@@ -15,13 +15,13 @@ addons:
       - oracle-java8-set-default
 
 install:
-  - pip install cactus
+  - pip install -r requirements.txt
   - pip install html5validator
-  - nvm install 6.10.3
-  - nvm use 6.10.3
+  - nvm install lts/carbon
+  - nvm use lts/carbon
   - npm install -g yarn
   - yarn install
 
 script:
   - cactus build
-  - html5validator --root .build --show-warnings
+  - html5validator --root .build --show-warnings --also-check-css
