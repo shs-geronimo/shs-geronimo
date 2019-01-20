@@ -1,11 +1,11 @@
 SHS Geronimo
 ============
 
-[![GPLv3](http://img.shields.io/badge/license-GPLv3-blue.png)](https://github.com/shs-geronimo/shs-geronimo/blob/master/LICENSE)
-[![Travis Status](http://img.shields.io/travis/shs-geronimo/shs-geronimo/master.png)](https://travis-ci.org/shs-geronimo/shs-geronimo)
+[![GPLv3](https://img.shields.io/badge/license-GPLv3-blue.png)](https://github.com/shs-geronimo/shs-geronimo/blob/master/LICENSE)
+[![Travis Status](https://img.shields.io/travis/shs-geronimo/shs-geronimo/master.png)](https://travis-ci.org/shs-geronimo/shs-geronimo)
 
 This is the website for the
-[SHS Geronimo](http://www.shs-geronimo.org).
+[SHS Geronimo](https://www.shs-geronimo.org).
 
 
 Installing cactus
