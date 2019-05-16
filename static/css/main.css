@@ -114,13 +114,13 @@ table td {
     float: left;
     margin: 0;
     background-image: url(../images_site/ADL_060178.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     width: 960px;
     height: 226px;
-    text-align: left;
     overflow: hidden;
+    text-align: left;
 }
 
 #contentContainer {
@@ -219,7 +219,6 @@ table td {
     color: #0059c5;
 }
 
-
 .textwidth {
     width: 640px;
 }
@@ -279,10 +278,10 @@ h6 {
 }
 
 .album {
-    width: 100%;
     border: 0;
-    overflow: auto;
     background-color: transparent;
+    width: 100%;
+    overflow: auto;
 }
 
 .clearer {
