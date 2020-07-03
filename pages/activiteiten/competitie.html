@@ -4,11 +4,15 @@
 {% block title %}{{ block.super }} : Competitie{% endblock %}
 
 {% block body %}
-    <h2>Competitie</h2>
 
-    <p>
-        Dit is een competitie binnen de club tussen de leden, zie
-        de <a href="{% url '/activiteiten.html' %}">activiteiten</a>
-        pagina voor de wedstrijd momenten.
-    </p>
+{% filter markdown %}
+
+## Competitie
+
+Dit is een competitie binnen de club tussen de leden, zie
+de <a href="{% url '/activiteiten.html' %}">activiteiten</a>
+pagina voor de wedstrijd momenten.
+
+{% endfilter %}
+
 {% endblock %}
