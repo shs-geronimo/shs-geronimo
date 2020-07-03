@@ -56,13 +56,6 @@
         Inschrijven voor de beginnerscursus kan ook via
         <a href="{% url '/aanmelden.html' %}">dit formulier</a>.
     </p>
-
-    <h2>Website</h2>
-
-    <p>
-        Indien je op- of aanmerkingen hebt over deze website, mail dan
-        naar: <a href="#" id="email_webma">Arne de Laat</a>.
-    </p>
 {% endblock %}
 
 {% block script %}
@@ -73,7 +66,6 @@
     var _voorz = "voorzitter",
         _secre = "secretaris",
         _penni = "penningmeester",
-        _webma = "webmaster";
 
     var _voorz2 = _mailt + _voorz + _at + _extger,
         _secre2 = _mailt + _secre + _at + _extger,
@@ -84,7 +76,4 @@
     document.getElementById('email_voorz').href = _voorz2;
     document.getElementById('email_secre').href = _secre2;
     document.getElementById('email_penni').href = _penni2;
-
-    // Extra
-    document.getElementById('email_webma').href = _webma2;
 {% endblock %}
