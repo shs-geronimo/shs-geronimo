@@ -42,5 +42,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: .build
         publish_branch: master
-        cname: www.shs-geronimo.org
+        cname: shs-geronimo.org
         force_orphan: true
