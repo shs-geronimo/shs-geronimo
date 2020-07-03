@@ -80,20 +80,10 @@
     Je kunt je aanmelden via
     <a href="{% url '/aanmelden.html' %}"><b>dit formulier</b></a> op de
     website. Daar moet je onder andere je naam, adres, telefoonnummer en
-    email invullen. Tijdens de cursus
-    krijg je alle materiaal van de club, wel is het handig strakke
-    kleding aan te doen en makkelijke loop schoenen. Neem
-    <a href="{% url '/contact.html' %}"><b>contact</b></a> op met de
-    <a id="email_secre" href="#"><b>secretaris</b></a> voor meer informatie.
+    email invullen. Tijdens de cursus krijg je alle materiaal van de club,
+    wel is het handig strakke kleding aan te doen en makkelijke loop schoenen.
+    Neem contact op met de <a href="{% url '/contact.html' %}"><b>secretaris</b></a>
+    voor meer informatie.
 </p>
 
-{% endblock %}
-
-{% block script %}
-    var _mailt = "mailto:",
-        _extger = "shs-geronimo.org",
-        _at = "@",
-        _secr = "secretaris",
-        _secr2 = _mailt + _secr + _at + _extger;
-    document.getElementById('email_secre').href = _secr2;
 {% endblock %}
