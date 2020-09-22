@@ -1,0 +1,289 @@
+html {
+    background-color: #555;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #444 215px, #333 225px, #555 226px);
+    text-align: left;
+    color: #111;
+    font: 14px 'Lucida Grande', LucidaGrande, Lucida, Helvetica, Arial, sans-serif;
+}
+
+img {
+    border: none;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+    color: #0054dd;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #003180;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+    color: #0062ff;
+}
+
+.table-left,
+.image-left {
+    float: left;
+    margin: 3px;
+    padding: 3px;
+}
+
+.image-right {
+    float: right;
+    margin: 3px;
+    padding: 3px;
+}
+
+table {
+    border: 0;
+    background-color: #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th {
+    background-color: #d9edff;
+    padding: 5px;
+}
+
+table td {
+    padding: 2px 5px;
+    vertical-align: top;
+}
+
+#container {
+    margin: 0 auto;
+    background: #fff;
+    width: 960px;
+    color: #111;
+    font-family: Helvetica, 'Lucida Grande', LucidaGrande, Lucida, Arial, sans-serif;
+}
+
+#pageHeader {
+    position: relative;
+    top: 20px;
+    left: 280px;
+    background-image: url(../images/geronimo-logo.png);
+    width: 207px;
+    height: 138px;
+    list-style: none;
+    text-align: left;
+    text-indent: -9999px;
+}
+
+#pageHeader img {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#pageHeader h1 {
+    margin: 0;
+    padding: 15px 20px 0 190px;
+    text-shadow: 0 0 2px #b0c4de;
+    color: #444;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+#pageHeader h2 {
+    margin: 0;
+    padding-right: 20px;
+    padding-left: 190px;
+    text-shadow: 0 0 1px #b0c4de;
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#bannerContainer {
+    float: left;
+    margin: 0;
+    background-image: url(../images_site/ADL_060178.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 960px;
+    height: 226px;
+    overflow: hidden;
+    text-align: left;
+}
+
+#contentContainer {
+    float: left;
+    padding-bottom: 10px;
+    width: 960px;
+    min-height: 375px;
+    text-align: left;
+}
+
+#contentContainer #content {
+    padding-top: 5px;
+    padding-right: 23px;
+    padding-left: 23px;
+    line-height: 1.4em;
+}
+
+#footer {
+    margin: 0 auto 7px;
+    background: linear-gradient(to bottom, #003675 0%, #0059c5 10px);
+    padding-top: 8px;
+    padding-bottom: 3px;
+    width: 960px;
+    height: 25px;
+    text-align: left;
+    color: #fff;
+}
+
+#footer span {
+    margin-top: 4px;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: #014483;
+}
+
+#subsubnavcontainer,
+#subnavcontainer,
+#navcontainer {
+    float: left;
+    background-color: rgba(13, 76, 115, 0.6);
+    height: 100%;
+    color: #fff;
+}
+
+#subnavcontainer {
+    background-color: rgba(13, 76, 115, 0.5);
+}
+
+#subsubnavcontainer {
+    background-color: rgba(13, 76, 115, 0.4);
+}
+
+#subsubnavcontainer .active,
+#subnavcontainer .active,
+#navcontainer .active {
+    background: #0059c5;
+}
+
+#subsubnavcontainer ul,
+#subnavcontainer ul,
+#navcontainer ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    list-style: none;
+}
+
+#subsubnavcontainer a,
+#subnavcontainer a,
+#navcontainer a {
+    display: block;
+    padding: 1px 20px 2px 15px;
+    height: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+#subsubnavcontainer a {
+    font-weight: bold;
+}
+
+#subsubnavcontainer a:hover,
+#subnavcontainer a:hover,
+#navcontainer a:hover {
+    background: #fff;
+    color: #0059c5;
+}
+
+.textwidth {
+    width: 640px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.8em;
+    color: #05a;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+#index td {
+    width: 205px;
+    height: 190px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#index img {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px #888;
+    width: 187px;
+    height: 140px;
+}
+
+.faded {
+    color: #bbb;
+}
+
+.album {
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    overflow: auto;
+}
+
+.clearer {
+    clear: both;
+}
